@@ -1,37 +1,38 @@
 package Controller;
 
 import Model.Album;
+import Model.Student;
 
-import java.io.IOException;
-import java.io.ObjectInputStream;
-import java.io.ObjectOutputStream;
+import java.io.*;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-public class SimpleClient {
-	
+public class SimpleClient  {
+
+
 	private ObjectOutputStream output;
 	private ObjectInputStream input;
 	private Socket socket;
-	
-	public void connect(String ip)
+
+
+	public void connect(String ip,String request)
 	{
-		int port = 7859;
-        try  {
+		int port = 4895;
+		try  {
 			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
 			socket = new Socket(ip, port);
 
 			//create the streams that will handle the objects coming and going through the sockets
 			output = new ObjectOutputStream(socket.getOutputStream());
-            input = new ObjectInputStream(socket.getInputStream());
-			
-			String textToSend = new String("send me the student info!");
-			System.out.println("text sent to the server: " + textToSend);			
-			output.writeObject(textToSend);		//serialize and write the String to the stream
- 
-			Album album = (Album) input.readObject();	//deserialize and read the Student object from the stream
-			//System.out.println("Received student id: " + student.getID() + " and student name:" + student.getName() + " from server");
-	    } catch  (UnknownHostException uhe) {
+			input = new ObjectInputStream(socket.getInputStream());
+
+			//String textToSend = new String("send me the student info!");
+			//System.out.println("text sent to the server: " + textToSend);
+			output.writeObject(request);		//serialize and write the String to the stream
+
+			String requestResponse = (String) input.readObject();	//deserialize and read the Student object from the stream
+			System.out.println(requestResponse);
+		} catch  (UnknownHostException uhe) {
 			uhe.printStackTrace();
 		}
 		catch  (IOException ioe) {
@@ -50,4 +51,61 @@ public class SimpleClient {
 			}
 		}
 	}
+
+	public String RequestReceived(){
+		String request = null;
+		return null;
+	}
+	/*public void connectSend(String ip, String Objet) {
+		try  {
+			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
+
+
+			output.writeObject(Objet);		//serialize and write the String to the stream
+
+
+		} catch  (UnknownHostException uhe) {
+			uhe.printStackTrace();
+		}
+		catch  (IOException ioe) {
+			ioe.printStackTrace();
+		}
+
+		finally {
+			try {
+				input.close();
+				output.close();
+				socket.close();
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
+		}
+
+	}
+
+	public String ConnectReceive(String ip) {
+
+		try {
+			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
+			socket = new Socket(ip, port);
+			//create the streams that will handle the objects coming and going through the sockets
+			output = new ObjectOutputStream(socket.getOutputStream());
+			input = new ObjectInputStream(socket.getInputStream());
+			ServerAnswer = (String) input.readObject();
+		} catch (UnknownHostException uhe) {
+		System.out.println(uhe.toString());
+		} catch (IOException ioe) {
+			System.out.println(ioe.toString());
+		} finally {
+			try {
+				input.close();
+				socket.close();
+			} catch (IOException ioe) {
+				ioe.printStackTrace();
+			}
+			return ServerAnswer;
+		}
+	}
+*/
+
 }
