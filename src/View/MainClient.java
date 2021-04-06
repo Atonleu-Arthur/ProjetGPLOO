@@ -18,7 +18,7 @@ public class MainClient {
 
        SimpleClient c1 = new SimpleClient();
 
-      System.out.println("[CLIENT] Type h for available commands");
+      System.out.println("> [CLIENT] Type h for available commands");
 
         Scanner scan = new Scanner(System.in);
         String choice = scan.nextLine();
@@ -41,7 +41,7 @@ public class MainClient {
                     break;
                 case 'g':
                     //songs of an album, sorted by genre
-                    System.out.println("Songs of an album sorted by genre will be displayed; enter the album name, available albums are:");
+                    System.out.println("> Songs of an album sorted by genre will be displayed; enter the album name, available albums are:");
                     c1.connect(SERVER_IP,"t");
                         albumTitle = scan.nextLine();
                         //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
@@ -50,13 +50,11 @@ public class MainClient {
                     printAvailableCommands();
                     choice = scan.nextLine();
                     break;
-                case 'd':
-                    //songs of an album
-                    System.out.println("Songs of an album will be displayed; enter the album name, available albums are:");
-                    System.out.println("theHub.getAlbumsTitlesSortedByDate()");
 
-                    albumTitle = scan.nextLine();
-                    System.out.println("theHub.getAlbumSongs(albumTitle)");
+                case 'p':
+                    //playlist list
+                    System.out.println("> Playlist list :");
+                    c1.connect(SERVER_IP,choice);
                     printAvailableCommands();
                     choice = scan.nextLine();
                     break;
@@ -65,10 +63,10 @@ public class MainClient {
     }
 
     private static void printAvailableCommands() {
-        System.out.println("t: display the album titles, ordered by date");
-        System.out.println("g: display songs of an album, ordered by genre");
-        System.out.println("d: display songs of an album");
-        System.out.println("p: display playlist");
+        System.out.println("> t: display the album titles, ordered by date");
+        System.out.println("> g: display songs of an album, ordered by genre");
+        System.out.println("> d: display songs of an album");
+        System.out.println("> p: display playlist");
 
     }
 }

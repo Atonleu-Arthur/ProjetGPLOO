@@ -56,56 +56,5 @@ public class SimpleClient  {
 		String request = null;
 		return null;
 	}
-	/*public void connectSend(String ip, String Objet) {
-		try  {
-			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
-
-
-			output.writeObject(Objet);		//serialize and write the String to the stream
-
-
-		} catch  (UnknownHostException uhe) {
-			uhe.printStackTrace();
-		}
-		catch  (IOException ioe) {
-			ioe.printStackTrace();
-		}
-
-		finally {
-			try {
-				input.close();
-				output.close();
-				socket.close();
-			} catch (IOException ioe) {
-				ioe.printStackTrace();
-			}
-		}
-
-	}
-
-	public String ConnectReceive(String ip) {
-
-		try {
-			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
-			socket = new Socket(ip, port);
-			//create the streams that will handle the objects coming and going through the sockets
-			output = new ObjectOutputStream(socket.getOutputStream());
-			input = new ObjectInputStream(socket.getInputStream());
-			ServerAnswer = (String) input.readObject();
-		} catch (UnknownHostException uhe) {
-		System.out.println(uhe.toString());
-		} catch (IOException ioe) {
-			System.out.println(ioe.toString());
-		} finally {
-			try {
-				input.close();
-				socket.close();
-			} catch (IOException ioe) {
-				ioe.printStackTrace();
-			}
-			return ServerAnswer;
-		}
-	}
-*/
 
 }
