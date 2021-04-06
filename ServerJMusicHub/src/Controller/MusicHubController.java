@@ -160,6 +160,13 @@ public class MusicHubController {
 
 		
 	}
+	public String getPlaylistsList(){
+		StringBuffer playlist = new StringBuffer();
+		for (PlayList playList:playlists) {
+			playlist.append(playList.getTitle()+ "\n");
+		}
+		return  playlist.toString();
+	}
 
 	public void addElementToAlbum(String elementTitle, String albumTitle) throws NoAlbumFoundException, NoElementFoundException
 	{

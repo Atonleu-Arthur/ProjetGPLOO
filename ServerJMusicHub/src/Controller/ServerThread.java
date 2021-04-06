@@ -42,18 +42,12 @@ public class ServerThread extends Thread {
 
 					break;
 				case 'g':
-					//songs of an album, sorted by genre
-					//output.writeObject(musicHubController.getAlbumsTitlesSortedByDate());
-					//albumTitle = scan.nextLine();
-					System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
+					//System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
 					break;
-				case 'd':
-					//songs of an album
-					System.out.println("Songs of an album will be displayed; enter the album name, available albums are:");
-					System.out.println("theHub.getAlbumsTitlesSortedByDate()");
 
-					//albumTitle = scan.nextLine();
-					System.out.println("theHub.getAlbumSongs(albumTitle)");
+				case 'p':
+					//playlist list
+					output.writeObject(musicHubController.getPlaylistsList());
 					break;
 
 				default:
