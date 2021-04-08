@@ -20,6 +20,7 @@ public class FirstServer extends AbstractServer
 			//the server socket is defined only by a port (its IP is localhost)
 			listerner = new ServerSocket (4895);
 			System.out.println("[SERVER] Server waiting for connection...");
+			String Choice;
 			while (true) {
 				Socket socket = listerner.accept();//establishes connection
 				System.out.println("[SERVER] Connected as " + ip);

@@ -6,6 +6,9 @@ import Controller.MusicHubController;
 import Controller.ServerThread;
 import Model.Album;
 import Model.AudioElement;
+import Model.Exceptions.NoAlbumFoundException;
+import Model.Exceptions.NoElementFoundException;
+import Model.Exceptions.NoPlayListFoundException;
 import Model.PlayList;
 import Model.Song;
 
@@ -15,30 +18,29 @@ import java.util.Scanner;
 
 public class MainServer {
 
-    public static  void main (String[] args) {
+    public static  void main (String[] args) throws NoAlbumFoundException, NoElementFoundException, NoPlayListFoundException {
 
-        AbstractServer as = new FirstServer();
-        String ip = "localhost";
-        as.connect(ip);
+
 
 
         /***
          *
          *
          */
-      /* MusicHubController theHub = new MusicHubController();
-        System.out.println("Type h for available commands");
+       MusicHubController theHub = new MusicHubController();
+        System.out.println("system administration by administrator \n");
+        printAvailableCommands();
 
 
         Scanner scan = new Scanner(System.in);
         String choice = scan.nextLine();
-      */
 
-        /*while (choice.charAt(0)!= 'q'){
+        while (choice.charAt(0)!= 'q'){
             switch (choice.charAt(0)){
                 case 'h':
-                    printAvailableCommands();
-                    choice = scan.nextLine();
+                    AbstractServer as = new FirstServer();
+                    String ip = "localhost";
+                    as.connect(ip);
                     break;
                 case 'c':
                     // add a new song
@@ -140,17 +142,18 @@ public class MainServer {
                     break;
 
             }
-        }*/
+        }
     }
 
     private static void printAvailableCommands() {
-        System.out.println("c: add a new song");
-        System.out.println("a: add a new album");
-        System.out.println("+: add a song to an album");
-        System.out.println("-: delete an existing playlist");
-        System.out.println("p: create a new playlist from existing songs and audio books");
-        System.out.println("s: save elements, albums, playlists");
-        System.out.println("q: quit program");
+        System.out.println("> h:[SERVER] Start Server");
+        System.out.println("> c: add a new song");
+        System.out.println("> a: add a new album");
+        System.out.println("> +: add a song to an album");
+        System.out.println("> -: delete an existing playlist");
+        System.out.println("> p: create a new playlist from existing songs and audio books");
+        System.out.println("> s: save elements, albums, playlists");
+        System.out.println("> q: quit program");
     }
 
 }
