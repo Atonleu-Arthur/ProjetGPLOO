@@ -69,7 +69,7 @@ public class Logs {
         }
     }
 
-    public static void main(String[] args) {
+    /**public static void main(String[] args) {
         try {
             Logs testLog = new Logs();
 
@@ -81,5 +81,5 @@ public class Logs {
         } catch (IOException e) {
             e.printStackTrace();
         }
-    }
+    }*/
 }
