@@ -17,6 +17,11 @@ public class MainServer {
 
     public static  void main (String[] args) {
 
+
+        MainServer mainServer = new MainServer();
+
+        new MainCommand(mainServer);
+
         AbstractServer as = new FirstServer();
         String ip = "localhost";
         as.connect(ip);
@@ -26,15 +31,16 @@ public class MainServer {
          *
          *
          */
-      /* MusicHubController theHub = new MusicHubController();
+     /* MusicHubController theHub = new MusicHubController();
         System.out.println("Type h for available commands");
 
 
         Scanner scan = new Scanner(System.in);
-        String choice = scan.nextLine();
-      */
+        String choice = scan.nextLine();*/
+       /*
 
-        /*while (choice.charAt(0)!= 'q'){
+
+        while (choice.charAt(0)!= 'q'){
             switch (choice.charAt(0)){
                 case 'h':
                     printAvailableCommands();
@@ -140,7 +146,7 @@ public class MainServer {
                     break;
 
             }
-        }*/
+        }
     }
 
     private static void printAvailableCommands() {
@@ -151,6 +157,6 @@ public class MainServer {
         System.out.println("p: create a new playlist from existing songs and audio books");
         System.out.println("s: save elements, albums, playlists");
         System.out.println("q: quit program");
-    }
+    */}
 
 }
