@@ -6,35 +6,40 @@ import javax.sound.sampled.*;
 
 
 public class AudioClient {
-    public static void main(String[] args) throws Exception {
-        if (args.length > 0) {
+    public void init() throws Exception {
+   /*     if (args.length > 0) {
             // play a file passed via the command line
             File soundFile = AudioUtil.getSoundFile(args[0]);
             System.out.println("Client: " + soundFile);
             try (BufferedInputStream in = new BufferedInputStream(new FileInputStream(soundFile))) {
                 play(in);
             }
-        }
-        else {
+        } */
             // play soundfile from server
             System.out.println("Client:............ ");
-            try (Socket socket = new Socket("127.0.0.1", 6666)) {
+            try (Socket socket = new Socket("localhost", 4896)) {
                 if (socket.isConnected()) {
                     InputStream in = new BufferedInputStream(socket.getInputStream());
+                    System.out.println(in);
                     play(in);
                 }
             }
-        }
+
 
         System.out.println("Client: end");
     }
 
 
     private static synchronized void play(final InputStream in) throws Exception {
+        System.out.println("Lecture");
         AudioInputStream ais = AudioSystem.getAudioInputStream(in);
+        System.out.println("Lecture");
         try (Clip clip = AudioSystem.getClip()) {
+            System.out.println("Lecture");
             clip.open(ais);
+            System.out.println("Lecture");
             clip.start();
+            System.out.println("Lecture");
             Thread.sleep(100); // given clip.drain a chance to start
             clip.drain();
         }

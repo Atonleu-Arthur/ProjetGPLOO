@@ -3,6 +3,7 @@ package Controller;
 import Model.Album;
 import Model.Student;
 
+import java.lang.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -10,6 +11,8 @@ import java.net.Socket;
 import Model.Exceptions.*;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.List;
+
 
 /**
  * This thread is responsible to handle client connection.
@@ -49,7 +52,29 @@ public class ServerThread extends Thread {
 					//playlist list
 					output.writeObject(musicHubController.getPlaylistsList());
 					break;
+				case 'o' :
+					StringBuilder requestAlbum = new StringBuilder(request);
+					requestAlbum = requestAlbum.deleteCharAt(0);
+					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(requestAlbum.toString()));
+					break;
 
+				case 'i' :
+					StringBuilder requestPlaylist = new StringBuilder(request);
+					requestPlaylist = requestPlaylist.deleteCharAt(0);
+					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(requestPlaylist.toString()));
+					break;
+
+				case 'l' :
+					StringBuilder requestSong = new StringBuilder(request);
+					requestAlbum = requestSong.deleteCharAt(0);
+					request = requestAlbum.toString();
+
+					AudioServer audio = new AudioServer();
+					output.writeObject("Serveur audio Prêt");
+					audio.init("files\\"+request+".wav");
+
+
+					break;
 				default:
 					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(request)); // Pareil ici
 					break;

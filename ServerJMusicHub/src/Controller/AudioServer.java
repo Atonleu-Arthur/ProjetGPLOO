@@ -5,16 +5,18 @@ import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.io.File;
+
 
 public class AudioServer {
-    public static void main(String[] args) throws IOException {
-      /* if (args.length == 0)
+    public static void init(String song) throws IOException {
+       if (song.length() == 0)
             throw new IllegalArgumentException("expected sound file arg");
-        File soundFile = AudioUtil.getSoundFile(args[0]);
+        File soundFile = AudioUtil.getSoundFile(song);
 
         System.out.println("server: " + soundFile);
 
-        try (ServerSocket serverSocker = new ServerSocket(6666);
+        try (ServerSocket serverSocker = new ServerSocket(4896);
              FileInputStream in = new FileInputStream(soundFile)) {
             if (serverSocker.isBound()) {
                 Socket client = serverSocker.accept();
@@ -28,6 +30,15 @@ public class AudioServer {
             }
         }
 
-        System.out.println("server: shutdown");*/
+        System.out.println("server: shutdown");
+    }
+}
+
+class AudioUtil {
+    public static File getSoundFile(String fileName) {
+        File soundFile = new File(fileName);
+        if (!soundFile.exists() || !soundFile.isFile())
+            throw new IllegalArgumentException("not a file: " + soundFile);
+        return soundFile;
     }
 }

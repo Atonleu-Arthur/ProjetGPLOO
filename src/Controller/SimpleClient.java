@@ -51,10 +51,21 @@ public class SimpleClient  {
 			}
 		}
 	}
+	public void disconnect()
+	{
+		try {
+			input.close();
+			output.close();
+			socket.close();
+		} catch (IOException ioe) {
+			ioe.printStackTrace();
+		}
+	}
 
 	public String RequestReceived(){
 		String request = null;
 		return null;
 	}
+
 
 }

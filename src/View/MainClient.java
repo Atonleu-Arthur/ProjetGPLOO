@@ -1,6 +1,7 @@
 package View;
 
 import Controller.SimpleClient;
+import Controller.AudioClient;
 import Model.Student;
 
 import java.io.BufferedReader;
@@ -17,6 +18,7 @@ public class MainClient {
         final String SERVER_IP ="localhost";
 
        SimpleClient c1 = new SimpleClient();
+       AudioClient c2 = new AudioClient();
 
       System.out.println("> [CLIENT] Type h for available commands");
 
@@ -24,6 +26,8 @@ public class MainClient {
         String choice = scan.nextLine();
 
         String albumTitle = null;
+        String playlistTitle = null;
+        String musicTitle = null;
         boolean indicate =true;
 
         if (choice.length() == 0) System.exit(0);
@@ -35,7 +39,16 @@ public class MainClient {
                     break;
                 case 't':
                     //album titles, ordered by date
-                     c1.connect(SERVER_IP,choice);
+                    //c1.connect(SERVER_IP,choice);
+                    musicTitle = scan.nextLine();
+
+                  /*   AudioClient a1 = new AudioClient();
+                    try {
+                        a1.init();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }*/
+
                     printAvailableCommands();
                     choice = scan.nextLine();
                     break;
@@ -43,9 +56,24 @@ public class MainClient {
                     //songs of an album, sorted by genre
                     System.out.println("> Songs of an album sorted by genre will be displayed; enter the album name, available albums are:");
                     c1.connect(SERVER_IP,"t");
-                        albumTitle = scan.nextLine();
+                    albumTitle = scan.nextLine();
                         //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
-                        c1.connect(SERVER_IP,albumTitle);
+
+                    System.out.println("> Songs of the album : ");
+                    c1.connect(SERVER_IP,"o"+albumTitle);
+
+                    System.out.println("what song do you want to play ? ");
+
+                    musicTitle = scan.nextLine();
+                    c1.connect(SERVER_IP,"l"+musicTitle);
+
+
+                    try {
+                        c2.init();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
 
                     printAvailableCommands();
                     choice = scan.nextLine();
@@ -54,10 +82,30 @@ public class MainClient {
                 case 'p':
                     //playlist list
                     System.out.println("> Playlist list :");
-                    c1.connect(SERVER_IP,choice);
+                    c1.connect(SERVER_IP,"p");
+                    playlistTitle = scan.nextLine();
+                    //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
+
+                    System.out.println("> Songs of the playlist : ");
+                    c1.connect(SERVER_IP,"i"+playlistTitle);
+
+                    System.out.println("what song do you want to play ? ");
+
+                    musicTitle = scan.nextLine();
+                    c1.connect(SERVER_IP,"l"+musicTitle);
+
+
+                    try {
+                        c2.init();
+                    } catch (Exception e) {
+                        e.printStackTrace();
+                    }
+
+
                     printAvailableCommands();
                     choice = scan.nextLine();
                     break;
+
             }
         }
     }
@@ -67,6 +115,5 @@ public class MainClient {
         System.out.println("> g: display songs of an album, ordered by genre");
         System.out.println("> d: display songs of an album");
         System.out.println("> p: display playlist");
-
     }
 }
