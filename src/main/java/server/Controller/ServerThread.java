@@ -1,6 +1,8 @@
 package server.Controller;
 
+import Model.Album;
 import Model.Exceptions.NoAlbumFoundException;
+import Model.Song;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -16,7 +18,12 @@ public class ServerThread extends Thread {
 	private ObjectInputStream input;
 	private ObjectOutputStream output;
 
- 
+	/**
+	 * Création d'un objet log pour
+	 * l'ecriture des erreurs dans
+	 * fichier horodatés
+	 */
+	Logs logs = new Logs();
     public ServerThread(Socket socket) {
         this.socket = socket;
 
@@ -47,9 +54,13 @@ public class ServerThread extends Thread {
 					output.writeObject(musicHubController.getPlaylistsList());
 					break;
 				case 'o' :
+					StringBuffer songlist = new StringBuffer();
+
 					StringBuilder requestAlbum = new StringBuilder(request);
 					requestAlbum = requestAlbum.deleteCharAt(0);
-					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(requestAlbum.toString()));
+					for (Song al : musicHubController.getAlbumSongsSortedByGenre(requestAlbum.toString()))
+						songlist.append(">> "+al.getTitle()+ "\n");
+					output.writeObject(songlist.toString());
 					break;
 
 				case 'i' :
@@ -65,7 +76,7 @@ public class ServerThread extends Thread {
 
 					AudioServer audio = new AudioServer();
 					output.writeObject("Serveur audio Prêt");
-					audio.init("files\\"+"test"+".wav");
+					audio.init("files\\"+request+".wav");
 
 
 					break;
@@ -83,20 +94,36 @@ public class ServerThread extends Thread {
 
 
         } catch (IOException ex) {
-            System.out.println("Server exception: " + ex.getMessage());
-            ex.printStackTrace();
+          //  System.out.println("Server exception: " + ex.getMessage());
+            //ex.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+ex.getMessage());
 
 		} catch (ClassNotFoundException ex) {
-            System.out.println("Server exception: " + ex.getMessage());
-            ex.printStackTrace();
+            //System.out.println("Server exception: " + ex.getMessage());
+            //ex.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+ex.getMessage());
         } catch (NoAlbumFoundException e) {
-			e.printStackTrace();
+			//e.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+e.getMessage());
 		} finally {
 			try {
 				output.close();
 				input.close();
 			} catch (IOException ioe) {
-				ioe.printStackTrace();
+				//ioe.printStackTrace();
+				/**
+				 * logWrite error
+				 */
+				logs.writeError("[SERVER]: "+ioe.getMessage());
 			}
 		}
 

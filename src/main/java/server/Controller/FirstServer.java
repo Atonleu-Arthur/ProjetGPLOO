@@ -9,6 +9,13 @@ import java.util.concurrent.Executors;
 
 public class FirstServer extends AbstractServer
 {
+	/**
+	 * @author Arthur
+	 * Création d'un objet log pour
+	 * l'ecriture des erreurs dans
+	 * fichier horodatés
+	 */
+	Logs logs = new Logs();
 	private String ip = "localhost";
 	private ServerSocket listerner;
 
@@ -30,13 +37,20 @@ public class FirstServer extends AbstractServer
 				new ServerThread(socket).start();
 			}
 		} catch (IOException ioe) {
-			ioe.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+ioe.getMessage());
+		//	ioe.printStackTrace();
+
 			//if IOException close the server socket
 			if (listerner != null && !listerner.isClosed()) {
 				try {
 					listerner.close();
 				} catch (IOException e) {
-					e.printStackTrace(System.err);
+					logs.writeError("[SERVER]: "+e.getMessage());
+
+					//e.printStackTrace(System.err);
 				}
 			}
 		}

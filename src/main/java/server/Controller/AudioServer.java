@@ -11,7 +11,17 @@ import java.net.Socket;
 
 
 public class AudioServer {
+
+
+
     public static void init(String song) throws IOException {
+
+        /**
+         * Création d'un objet log pour
+         * l'ecriture des erreurs dans
+         * fichier horodatés
+         */
+        Logs logs = new Logs();
        if (song.length() == 0)
             throw new IllegalArgumentException("expected sound file arg");
         File soundFile = AudioUtil.getSoundFile(song);
@@ -28,6 +38,12 @@ public class AudioServer {
                     int count;
                     while ((count = in.read(buffer)) != -1)
                         out.write(buffer, 0, count);
+                }catch (Exception ex)
+                {
+                    /**
+                     * logWrite error
+                     */
+                    logs.writeError("[SERVER]: "+ex.getMessage());
                 }
             }
         }

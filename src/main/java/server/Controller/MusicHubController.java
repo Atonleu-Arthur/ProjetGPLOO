@@ -42,7 +42,12 @@ public class MusicHubController {
 	public static final String ALBUMS_FILE_PATH = DIR + "\\files\\albums.xml";
 	public static final String PLAYLISTS_FILE_PATH = DIR + "\\files\\playlists.xml";
 	public static final String ELEMENTS_FILE_PATH = DIR + "\\files\\elements.xml";
-
+	/**
+	 * Création d'un objet log pour
+	 * l'ecriture des erreurs dans
+	 * fichier horodatés
+	 */
+	Logs logs = new Logs();
 	private XMLHandler xmlHandler = new XMLHandler();
 
 	public MusicHubController () {
@@ -194,9 +199,17 @@ public class MusicHubController {
 				albums.set(i,theAlbum);
 			}
 			else throw new NoElementFoundException("Element " + elementTitle + " not found!");
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+"Element" +elementTitle +"not founf");
+
 		}
 		else throw new NoAlbumFoundException("Album " + albumTitle + " not found!");
-
+		/**
+		 * logWrite error
+		 */
+		logs.writeError("[SERVER]: "+"Album" +albumTitle +"not founf");
 	}
 
 	public void addElementToPlayList(String elementTitle, String playListTitle) throws NoPlayListFoundException, NoElementFoundException
@@ -243,7 +256,12 @@ public class MusicHubController {
 					try {
 						this.addAlbum(new Album (albumElement));
 					} catch (Exception ex) {
-						System.out.println ("Something is wrong with the XML album element");
+						//System.out.println ("Something is wrong with the XML album element");
+						/**
+						 * logWrite error
+						 */
+						logs.writeError("[SERVER]: "+"omething is wrong with the XML album element");
+
 					}
 				}
 			}
@@ -261,7 +279,12 @@ public class MusicHubController {
 					try {
 						this.addPlaylist(new PlayList (playlistElement));
 					} catch (Exception ex) {
-						System.out.println ("Something is wrong with the XML playlist element");
+						//System.out.println ("Something is wrong with the XML playlist element");
+						/**
+						 * logWrite error
+						 */
+						logs.writeError("[SERVER]: "+"omething is wrong with the XML audiobook element");
+
 					}
 				}
 			}
@@ -280,7 +303,12 @@ public class MusicHubController {
 						AudioElement newSong = new Song (audioElement);
 						this.addElement(newSong);
 					} catch (Exception ex) 	{
-						System.out.println ("Something is wrong with the XML song element");
+						//System.out.println ("Something is wrong with the XML song element");
+						/**
+						 * logWrite erro
+						 */
+						logs.writeError("[SERVER]: "+"omething is wrong with the XML song element");
+
 					}
 				}
 				if (audioElement.getNodeName().equals("audiobook")) 	{
@@ -288,7 +316,11 @@ public class MusicHubController {
 						AudioElement newAudioBook = new AudioBook (audioElement);
 						this.addElement(newAudioBook);
 					} catch (Exception ex) 	{
-						System.out.println ("Something is wrong with the XML audiobook element");
+						//System.out.println ("Something is wrong with the XML audiobook element");
+						/**
+						 * logWrite error
+						 */
+						logs.writeError("[SERVER]: "+"something is wrong with the XML audiobook element");
 					}
 				}
 			}

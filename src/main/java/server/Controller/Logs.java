@@ -13,7 +13,7 @@ public class Logs {
     public static final String dir = System.getProperty("user.dir");
     public final String defaultPath = dir + "\\files\\logs.txt";
 
-    public Logs() throws IOException {
+    public Logs()  {
 
         this.pathFile = this.defaultPath;
 
@@ -44,7 +44,7 @@ public class Logs {
     }
 
 
-    public void writeInfo(String warning) throws IOException {
+    public void writeInfo(String warning)  {
 
         SimpleDateFormat date = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");
         String timeStamp = date.format(new Date());
@@ -56,7 +56,7 @@ public class Logs {
         }
     }
 
-    public void writeError(String warning) throws IOException {
+    public void writeError(String warning)  {
 
         SimpleDateFormat date = new SimpleDateFormat("yyyy.MM.dd.HH:mm:ss");
         String timeStamp = date.format(new Date());

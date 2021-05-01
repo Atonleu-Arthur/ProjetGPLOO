@@ -2,6 +2,8 @@ package Model;
 
 import java.util.*;
 import org.w3c.dom.*;
+import server.Controller.Logs;
+
 import java.text.*;
 
 
@@ -13,7 +15,12 @@ public class Album {
 	private UUID uuid;
 	private Date date;
 	private ArrayList<UUID> songsUIDs;
-
+	/**
+	 * Création d'un objet log pour
+	 * l'ecriture des erreurs dans
+	 * fichier horodatés
+	 */
+	Logs logs = new Logs();
 	public Album (String title, String artist, int lengthInSeconds, String id, String date, ArrayList<UUID> songsUIDs) {
 		this.title = title;
 		this.artist = artist;
@@ -79,7 +86,10 @@ public class Album {
 				} 
 			}
 		} catch (Exception ex) {
-			throw ex;
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+ex.getMessage());
 		}
 	}
 	
@@ -117,9 +127,9 @@ public class Album {
         nameElement.appendChild(document.createTextNode(title));
         albumElement.appendChild(nameElement);
 		
-		Element artistElement = document.createElement("artist");
+		/*Element artistElement = document.createElement("artist");
         artistElement.appendChild(document.createTextNode(artist));
-        albumElement.appendChild(artistElement);
+        albumElement.appendChild(artistElement);*/
 		
 		Element lengthElement = document.createElement("lengthInSeconds");
         lengthElement.appendChild(document.createTextNode(Integer.valueOf(lengthInSeconds).toString()));

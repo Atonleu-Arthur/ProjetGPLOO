@@ -17,6 +17,12 @@ public class XMLHandler {
 	Transformer transformer;
 	DocumentBuilderFactory documentFactory;
 	DocumentBuilder documentBuilder;
+	/**
+	 * Création d'un objet log pour
+	 * l'ecriture des erreurs dans
+	 * fichier horodatés
+	 */
+	Logs logs = new Logs();
 
 	public XMLHandler() {
 		try {
@@ -48,6 +54,10 @@ public class XMLHandler {
 
 		} catch (TransformerException tfe) {
 			tfe.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+tfe.getMessage());
 		}
 	}
 
@@ -67,10 +77,18 @@ public class XMLHandler {
 		catch (SAXException e)
 		{
 			e.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+e.getMessage());
 		}
 		catch (IOException e)
 		{
 			e.printStackTrace();
+			/**
+			 * logWrite error
+			 */
+			logs.writeError("[SERVER]: "+e.getMessage());
 		}
 		return elementNodes;
 	}

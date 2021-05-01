@@ -6,6 +6,7 @@ import Model.Exceptions.NoAlbumFoundException;
 import Model.Exceptions.NoElementFoundException;
 import Model.Exceptions.NoPlayListFoundException;
 
+import java.io.IOException;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -14,9 +15,15 @@ public class commandController {
     MusicHubController theHub = new MusicHubController ();
 
     Scanner scan = new Scanner(System.in);
-
+    /**
+     * Création d'un objet log pour
+     * l'ecriture des erreurs dans
+     * fichier horodatés
+     */
+    Logs logs = new Logs();
     String albumTitle = null;
     String choice;
+
 
 
     public void t() {
@@ -34,6 +41,10 @@ public class commandController {
             System.out.println(theHub.getAlbumSongsSortedByGenre(albumTitle));
         } catch (NoAlbumFoundException ex) {
             System.out.println("No album found with the requested title " + ex.getMessage());
+            /**
+             * logWrite error
+             */
+            logs.writeError("[SERVER]: "+"No album found with the requested title");
         }
     }
 
@@ -47,6 +58,11 @@ public class commandController {
             System.out.println(theHub.getAlbumSongs(albumTitle));
         } catch (NoAlbumFoundException ex) {
             System.out.println("No album found with the requested title " + ex.getMessage());
+            /**
+             * logWrite error
+             */
+            logs.writeError("[SERVER]: "+"No album found with the requested title");
+
         }
 
     }
@@ -71,29 +87,30 @@ public class commandController {
         String content = scan.nextLine();
         Song s = new Song (title, artist, length, content, genre);
         theHub.addElement(s);
-        System.out.println("New element list: ");
+        System.out.println(">> New element list: ");
         Iterator<AudioElement> it = theHub.elements();
         while (it.hasNext()) System.out.println(it.next().getTitle());
-        System.out.println("Song created!");
+        System.out.println(">> Song created!");
+        h();
     }
 
     public void a() {
         // add a new album
-        System.out.println("Enter a new album: ");
-        System.out.println("Album title: ");
+        System.out.println(">> Enter a new album: ");
+        System.out.println(">> Album title: ");
         String aTitle = scan.nextLine();
-        System.out.println("Album artist: ");
+        System.out.println(">> Album artist: ");
         String aArtist = scan.nextLine();
-        System.out.println ("Album length in seconds: ");
+        System.out.println (">> Album length in seconds: ");
         int aLength = Integer.parseInt(scan.nextLine());
-        System.out.println("Album date as YYYY-DD-MM: ");
+        System.out.println(">> Album date as YYYY-DD-MM: ");
         String aDate = scan.nextLine();
         Album a = new Album(aTitle, aArtist, aLength, aDate);
         theHub.addAlbum(a);
-        System.out.println("New list of albums: ");
+        System.out.println(">> New list of albums: ");
         Iterator<Album> ita = theHub.albums();
         while (ita.hasNext()) System.out.println(ita.next().getTitle());
-        System.out.println("Album created!");
+        System.out.println(">> Album created!");
         h();
     }
 
@@ -119,8 +136,12 @@ public class commandController {
             theHub.addElementToAlbum(songTitle, titleAlbum);
         } catch (NoAlbumFoundException ex){
             System.out.println (ex.getMessage());
+            logs.writeError(ex.getMessage());
+
         } catch (NoElementFoundException ex){
             System.out.println (ex.getMessage());
+            logs.writeError(ex.getMessage());
+
         }
         System.out.println("Song added to the album!");
         h();
@@ -175,8 +196,14 @@ public class commandController {
                 theHub.addElementToPlayList(elementTitle, playListTitle);
             } catch (NoPlayListFoundException ex) {
                 System.out.println (ex.getMessage());
+
+                logs.writeError(ex.getMessage());
+
             } catch (NoElementFoundException ex) {
+
                 System.out.println (ex.getMessage());
+                logs.writeError(ex.getMessage());
+
             }
 
             System.out.println("Type y to add a new one, n to end");

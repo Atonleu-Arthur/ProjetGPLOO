@@ -7,26 +7,17 @@ import javax.sound.sampled.*;
 
 public class AudioClient {
     public void init() throws Exception {
-   /*     if (args.length > 0) {
-            // play a file passed via the command line
-            File soundFile = AudioUtil.getSoundFile(args[0]);
-            System.out.println("Client: " + soundFile);
-            try (BufferedInputStream in = new BufferedInputStream(new FileInputStream(soundFile))) {
-                play(in);
-            }
-        } */
-            // play soundfile from server
-            //System.out.println("Client:............ ");
-            try (Socket socket = new Socket("> localhost", 4895)) {
+
+            try (Socket socket = new Socket("localhost", 4895)) {
                 if (socket.isConnected()) {
                     InputStream in = new BufferedInputStream(socket.getInputStream());
-                    System.out.println(in);
+                    //System.out.println(in);
                     play(in);
                 }
             }
 
 
-        System.out.println("> Fin de la lecture \n Menu ");
+        System.out.println(">> Fin de la lecture \n>>Menu ");
     }
 
 
