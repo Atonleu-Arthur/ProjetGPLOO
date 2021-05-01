@@ -1,9 +1,9 @@
 package View;
 
-import Controller.AbstractServer;
-import Controller.FirstServer;
+import Controller.commandController;
 
 import java.util.Scanner;
+
 
 public class MainCommand implements Runnable {
 

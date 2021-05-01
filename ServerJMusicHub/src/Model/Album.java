@@ -1,13 +1,9 @@
 package Model;
 
-import org.w3c.dom.Document;
-import org.w3c.dom.Element;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
-
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.*;
+import org.w3c.dom.*;
+import java.text.*;
+
 
 
 public class Album {
@@ -31,7 +27,7 @@ public class Album {
 		}
 		this.songsUIDs = songsUIDs;
 	}
-	
+
 	public Album (String title, String artist, int lengthInSeconds, String date) {
 		this.title = title;
 		this.artist = artist;
@@ -45,7 +41,7 @@ public class Album {
 		}
 		this.songsUIDs = new ArrayList<UUID>();
 	}
-	
+
 	public Album (Element xmlElement) throws Exception {
 		try {
 			this.title = xmlElement.getElementsByTagName("title").item(0).getTextContent();
@@ -60,16 +56,16 @@ public class Album {
 			if ((uuid == null)  || (uuid.isEmpty()))
 				this.uuid = UUID.randomUUID();
 			else this.uuid = UUID.fromString(uuid);
-			
+
 			SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-			this.date = sdf.parse(xmlElement.getElementsByTagName("date").item(0).getTextContent()); 
+			this.date = sdf.parse(xmlElement.getElementsByTagName("date").item(0).getTextContent());
 			//parse list of songs:
 			Node songsElement = xmlElement.getElementsByTagName("songs").item(0);
 			NodeList songUUIDNodes = songsElement.getChildNodes();
 			if (songUUIDNodes == null) return;
-		
+
 			this.songsUIDs = new ArrayList<UUID>();
-			
+
 			for (int i = 0; i < songUUIDNodes.getLength(); i++) {
 				if (songUUIDNodes.item(i).getNodeType() == Node.ELEMENT_NODE)   {
 					Element songElement = (Element) songUUIDNodes.item(i);
@@ -80,68 +76,68 @@ public class Album {
 							ex.printStackTrace();
 						}
 					}
-				} 
+				}
 			}
 		} catch (Exception ex) {
 			throw ex;
 		}
 	}
-	
-	
+
+
 	public void addSong (UUID song)
 	{
 		songsUIDs.add(song);
 	}
-	
-	
+
+
 	public List<UUID> getSongs() {
 		return songsUIDs;
 	}
-	
+
 	public ArrayList<UUID> getSongsRandomly() {
 		ArrayList<UUID> shuffledSongs = songsUIDs;
 		Collections.shuffle(shuffledSongs);
 		return shuffledSongs;
 	}
-	
+
 	public String getTitle() {
 		return title;
 	}
-	
+
 	public Date getDate() {
 		return date;
 	}
-	
+
 	public void createXMLElement(Document document, Element parentElement)
 	{
 		Element albumElement = document.createElement("album");
 		parentElement.appendChild(albumElement);
-		
+
 		Element nameElement = document.createElement("title");
-        nameElement.appendChild(document.createTextNode(title));
-        albumElement.appendChild(nameElement);
-		
-		Element artistElement = document.createElement("artist");
-        artistElement.appendChild(document.createTextNode(artist));
-        albumElement.appendChild(artistElement);
-		
+		nameElement.appendChild(document.createTextNode(title));
+		albumElement.appendChild(nameElement);
+
+		/*Element artistElement = document.createElement("artist");
+		artistElement.appendChild(document.createTextNode(artist));
+		albumElement.appendChild(artistElement);*/
+
 		Element lengthElement = document.createElement("lengthInSeconds");
-        lengthElement.appendChild(document.createTextNode(Integer.valueOf(lengthInSeconds).toString()));
-        albumElement.appendChild(lengthElement);
-		
+		lengthElement.appendChild(document.createTextNode(Integer.valueOf(lengthInSeconds).toString()));
+		albumElement.appendChild(lengthElement);
+
 		Element UUIDElement = document.createElement("UUID");
-        UUIDElement.appendChild(document.createTextNode(uuid.toString()));
-        albumElement.appendChild(UUIDElement);
-		
+		UUIDElement.appendChild(document.createTextNode(uuid.toString()));
+		albumElement.appendChild(UUIDElement);
+
 		Element dateElement = document.createElement("date");
 		SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
-        dateElement.appendChild(document.createTextNode(sdf.format(date)));
-        albumElement.appendChild(dateElement);
-		
+		dateElement.appendChild(document.createTextNode(sdf.format(date)));
+		albumElement.appendChild(dateElement);
+
 		Element songsElement = document.createElement("songs");
 		for (Iterator<UUID> songUUIDIter = this.songsUIDs.listIterator(); songUUIDIter.hasNext();) {
 			UUID currentUUID = songUUIDIter.next();
-			
+
 			Element songUUIDElement = document.createElement("UUID");
 			songUUIDElement.appendChild(document.createTextNode(currentUUID.toString()));
 			songsElement.appendChild(songUUIDElement);

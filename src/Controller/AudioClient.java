@@ -16,8 +16,8 @@ public class AudioClient {
             }
         } */
             // play soundfile from server
-            System.out.println("Client:............ ");
-            try (Socket socket = new Socket("localhost", 4896)) {
+            //System.out.println("Client:............ ");
+            try (Socket socket = new Socket("> localhost", 4895)) {
                 if (socket.isConnected()) {
                     InputStream in = new BufferedInputStream(socket.getInputStream());
                     System.out.println(in);
@@ -26,20 +26,20 @@ public class AudioClient {
             }
 
 
-        System.out.println("Client: end");
+        System.out.println("> Fin de la lecture \n Menu ");
     }
 
 
     private static synchronized void play(final InputStream in) throws Exception {
-        System.out.println("Lecture");
+        System.out.println("> Lecture en cours...");
         AudioInputStream ais = AudioSystem.getAudioInputStream(in);
-        System.out.println("Lecture");
+       // System.out.println("Lecture");
         try (Clip clip = AudioSystem.getClip()) {
-            System.out.println("Lecture");
+          // System.out.println("Lecture");
             clip.open(ais);
-            System.out.println("Lecture");
+          //  System.out.println("Lecture");
             clip.start();
-            System.out.println("Lecture");
+            //System.out.println("Lecture");
             Thread.sleep(100); // given clip.drain a chance to start
             clip.drain();
         }

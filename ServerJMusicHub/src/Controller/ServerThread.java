@@ -1,17 +1,11 @@
 package Controller;
 
-import Model.Album;
-import Model.Student;
+import Model.Exceptions.NoAlbumFoundException;
 
-import java.lang.*;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
-import Model.Exceptions.*;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
 
 
 /**
@@ -71,7 +65,7 @@ public class ServerThread extends Thread {
 
 					AudioServer audio = new AudioServer();
 					output.writeObject("Serveur audio Prêt");
-					audio.init("files\\"+request+".wav");
+					audio.init("files\\"+"test"+".wav");
 
 
 					break;

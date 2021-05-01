@@ -1,11 +1,11 @@
 package Controller;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.io.File;
 
 
 public class AudioServer {
@@ -14,9 +14,9 @@ public class AudioServer {
             throw new IllegalArgumentException("expected sound file arg");
         File soundFile = AudioUtil.getSoundFile(song);
 
-        System.out.println("server: " + soundFile);
+        System.out.println("server: " + soundFile.getName());
 
-        try (ServerSocket serverSocker = new ServerSocket(4896);
+        try (ServerSocket serverSocker = new ServerSocket(4895);
              FileInputStream in = new FileInputStream(soundFile)) {
             if (serverSocker.isBound()) {
                 Socket client = serverSocker.accept();

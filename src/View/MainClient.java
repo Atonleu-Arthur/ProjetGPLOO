@@ -39,15 +39,8 @@ public class MainClient {
                     break;
                 case 't':
                     //album titles, ordered by date
-                    //c1.connect(SERVER_IP,choice);
-                    musicTitle = scan.nextLine();
-
-                  /*   AudioClient a1 = new AudioClient();
-                    try {
-                        a1.init();
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }*/
+                    c1.connect(SERVER_IP,choice);
+                    //musicTitle = scan.nextLine();
 
                     printAvailableCommands();
                     choice = scan.nextLine();

@@ -17,7 +17,7 @@ public class SimpleClient  {
 
 	public void connect(String ip,String request)
 	{
-		int port = 4895;
+		int port = 4896;
 		try  {
 			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
 			socket = new Socket(ip, port);
