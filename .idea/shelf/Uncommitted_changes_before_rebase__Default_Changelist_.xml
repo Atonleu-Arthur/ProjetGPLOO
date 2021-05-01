@@ -1,0 +1,69 @@
+<changelist name="Uncommitted_changes_before_rebase_[Default_Changelist]" date="1619723024852" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before rebase [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/Genre.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Genre.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Genre.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Controller/AudioUtil.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Controller/AudioUtil.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/AudioUtil.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/Student.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Student.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/Language.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Language.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Language.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Controller/SimpleClient.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Controller/SimpleClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/SimpleClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/Album.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Album.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Album.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/Category.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Category.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Category.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/AudioElement.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/AudioElement.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/AudioElement.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/View/MainClient.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/View/MainClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/MainClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Controller/AudioClient.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Controller/AudioClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/AudioClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/Song.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Song.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/Song.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/PlayList.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/PlayList.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/PlayList.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/JMusicHub/Model/AudioBook.class" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/AudioBook.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase_[Default_Changelist]/AudioBook.class" />
+  </binary>
+</changelist>

@@ -1,0 +1,38 @@
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_X\" default=\"true\" project-jdk-name=\"openjdk-16\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/out\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/misc.xml b/.idea/misc.xml
+--- a/.idea/misc.xml	
++++ b/.idea/misc.xml	
+@@ -1,6 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_X" default="true" project-jdk-name="openjdk-16" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" project-jdk-name="openjdk-16" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/out" />
+   </component>
+ </project>
+\ No newline at end of file
+Index: ServerJMusicHub/src/Controller/ServerThread.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package Controller;\r\n\r\nimport Model.Album;\r\nimport Model.Student;\r\n\r\nimport java.lang.*;\r\nimport java.io.IOException;\r\nimport java.io.ObjectInputStream;\r\nimport java.io.ObjectOutputStream;\r\nimport java.net.Socket;\r\nimport Model.Exceptions.*;\r\nimport java.util.ArrayList;\r\nimport java.util.Iterator;\r\nimport java.util.List;\r\n\r\n\r\n/**\r\n * This thread is responsible to handle client connection.\r\n */\r\npublic class ServerThread extends Thread {\r\n    private Socket socket;\r\n\tprivate ObjectInputStream input;\r\n\tprivate ObjectOutputStream output;\r\n\r\n \r\n    public ServerThread(Socket socket) {\r\n        this.socket = socket;\r\n\r\n    }\r\n \r\n    public void run() {\r\n        try {\r\n\r\n        \t//create the streams that will handle the objects coming through the sockets\r\n\t\t\tinput = new ObjectInputStream(socket.getInputStream());\r\n\t\t\toutput = new ObjectOutputStream(socket.getOutputStream());\r\n\t\t\tMusicHubController musicHubController = new MusicHubController();\r\n\r\n\t\t\tString request = (String)input.readObject();  //read the object received through the stream and deserialize it\r\n\r\n\t\t\tswitch (request.charAt(0)) {\r\n\t\t\t\tcase 't':\r\n\t\t\t\t\t//album titles, ordered by date\r\n\t\t\t\t\toutput.writeObject(musicHubController.getAlbumsTitlesSortedByDate());\r\n\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase 'g':\r\n\t\t\t\t\t//System.out.println(\"theHub.getAlbumSongsSortedByGenre(albumTitle)\"); // Pareil ici\r\n\t\t\t\t\tbreak;\r\n\r\n\t\t\t\tcase 'p':\r\n\t\t\t\t\t//playlist list\r\n\t\t\t\t\toutput.writeObject(musicHubController.getPlaylistsList());\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tcase 'o' :\r\n\t\t\t\t\tStringBuilder requestAlbum = new StringBuilder(request);\r\n\t\t\t\t\trequestAlbum = requestAlbum.deleteCharAt(0);\r\n\t\t\t\t\toutput.writeObject(musicHubController.getAlbumSongsSortedByGenre(requestAlbum.toString()));\r\n\t\t\t\t\tbreak;\r\n\r\n\t\t\t\tcase 'i' :\r\n\t\t\t\t\tStringBuilder requestPlaylist = new StringBuilder(request);\r\n\t\t\t\t\trequestPlaylist = requestPlaylist.deleteCharAt(0);\r\n\t\t\t\t\toutput.writeObject(musicHubController.getAlbumSongsSortedByGenre(requestPlaylist.toString()));\r\n\t\t\t\t\tbreak;\r\n\r\n\t\t\t\tcase 'l' :\r\n\t\t\t\t\tStringBuilder requestSong = new StringBuilder(request);\r\n\t\t\t\t\trequestAlbum = requestSong.deleteCharAt(0);\r\n\t\t\t\t\trequest = requestAlbum.toString();\r\n\r\n\t\t\t\t\tAudioServer audio = new AudioServer();\r\n\t\t\t\t\toutput.writeObject(\"Serveur audio Prêt\");\r\n\t\t\t\t\taudio.init(\"files\\\\\"+request+\".wav\");\r\n\r\n\r\n\t\t\t\t\tbreak;\r\n\t\t\t\tdefault:\r\n\t\t\t\t\toutput.writeObject(musicHubController.getAlbumSongsSortedByGenre(request)); // Pareil ici\r\n\t\t\t\t\tbreak;\r\n\r\n\r\n\r\n\t\t\t}\r\n\r\n\r\n\r\n\r\n\r\n\r\n        } catch (IOException ex) {\r\n            System.out.println(\"Server exception: \" + ex.getMessage());\r\n            ex.printStackTrace();\r\n\r\n\t\t} catch (ClassNotFoundException ex) {\r\n            System.out.println(\"Server exception: \" + ex.getMessage());\r\n            ex.printStackTrace();\r\n        } catch (NoAlbumFoundException e) {\r\n\t\t\te.printStackTrace();\r\n\t\t} finally {\r\n\t\t\ttry {\r\n\t\t\t\toutput.close();\r\n\t\t\t\tinput.close();\r\n\t\t\t} catch (IOException ioe) {\r\n\t\t\t\tioe.printStackTrace();\r\n\t\t\t}\r\n\t\t}\r\n\r\n\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ServerJMusicHub/src/Controller/ServerThread.java b/ServerJMusicHub/src/Controller/ServerThread.java
+--- a/ServerJMusicHub/src/Controller/ServerThread.java	
++++ b/ServerJMusicHub/src/Controller/ServerThread.java	
+@@ -71,7 +71,7 @@
+ 
+ 					AudioServer audio = new AudioServer();
+ 					output.writeObject("Serveur audio Prêt");
+-					audio.init("files\\"+request+".wav");
++					audio.init("files\\"+"test"+".wav");
+ 
+ 
+ 					break;

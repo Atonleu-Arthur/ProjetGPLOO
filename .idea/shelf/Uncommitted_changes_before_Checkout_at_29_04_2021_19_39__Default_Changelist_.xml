@@ -1,0 +1,214 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]" date="1619717956755" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 29/04/2021 19:39 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/Genre.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/Genre.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Genre.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Genre.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Genre.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Genre1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/SortByAuthor.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/SortByAuthor.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/SortByAuthor.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/AudioBook.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioBook.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/ClientHandler.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/ClientHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/ClientHandler.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Controller/SimpleClient.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Controller/SimpleClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/SimpleClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Student.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/AudioBook.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/AudioBook.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioBook1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Category.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Category.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Song.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Song.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/Category.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/Category.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Category1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Song.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Song.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Song1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/View/MainServer.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/View/MainServer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/MainServer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/SortByDate.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/SortByDate.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/SortByDate.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Student.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Student.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Student1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/AudioBook.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/AudioBook.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioBook2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Controller/AudioClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Controller/SimpleClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/SimpleClient1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Language.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Language.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Language.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/PlayList.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/PlayList.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/PlayList.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/XMLHandler.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/XMLHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/XMLHandler.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Exceptions/NoPlayListFoundException.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Exceptions/NoPlayListFoundException.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/NoPlayListFoundException.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/AudioElement.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioElement.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Exceptions/NoAlbumFoundException.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Exceptions/NoAlbumFoundException.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/NoAlbumFoundException.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/Language.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/Language.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Language1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Album.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Album.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Album.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/MusicHubController.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/MusicHubController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/MusicHubController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/AudioServer.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/AudioServer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioServer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Album.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Album1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/Album.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/Album.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Album2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/View/MainClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/MainClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/AudioElement.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/AudioElement.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioElement1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Controller/SortByGenre.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Controller/SortByGenre.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/SortByGenre.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Controller/AudioUtil.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioUtil.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/PlayList.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/PlayList1.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/Song.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/Song.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Song2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/jMusicHub/Model/PlayList.class" />
+    <option name="AFTER_PATH" value="out/production/jMusicHub/Model/PlayList.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/PlayList2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Exceptions/NoElementFoundException.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Exceptions/NoElementFoundException.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/NoElementFoundException.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/Category.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/Category.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Category2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Genre.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Genre2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" />
+    <option name="AFTER_PATH" value="out/production/JMusicHub/Model/Language.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/Language2.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="out/production/ServerJMusicHub/Model/AudioElement.class" />
+    <option name="AFTER_PATH" value="out/production/ServerJMusicHub/Model/AudioElement.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39_[Default_Changelist]/AudioElement2.class" />
+  </binary>
+</changelist>

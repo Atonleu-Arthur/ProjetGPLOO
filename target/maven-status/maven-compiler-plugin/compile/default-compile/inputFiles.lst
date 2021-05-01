@@ -1,27 +1,27 @@
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\XMLHandler.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\AbstractServer.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\FirstServer.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\client\Controller\AudioClient.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Exceptions\NoPlayListFoundException.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\View\MainCommand.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Category.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Student.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Genre.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\AudioElement.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Album.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\commandController.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\View\MainServer.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\client\View\MainClient.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Language.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Song.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Exceptions\NoElementFoundException.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\MusicHubController.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\PlayList.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\Exceptions\NoAlbumFoundException.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\AudioUtil.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\ClientHandler.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\Logs.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\client\Controller\SimpleClient.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\Model\AudioBook.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\ServerThread.java
-C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\main\java\server\Controller\AudioServer.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\FirstServer.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\AbstractServer.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\client\View\MainClient.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\AudioElement.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\View\MainCommand.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Category.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Exceptions\NoPlayListFoundException.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\AudioBook.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\Logs.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Genre.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\XMLHandler.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\client\Controller\AudioClient.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\AudioUtil.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Song.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Student.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Album.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\MusicHubController.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Exceptions\NoAlbumFoundException.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\AudioServer.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\ServerThread.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\ClientHandler.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\client\Controller\SimpleClient.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Language.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\Exceptions\NoElementFoundException.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\Model\PlayList.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\Controller\commandController.java
+D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\main\java\server\View\MainServer.java

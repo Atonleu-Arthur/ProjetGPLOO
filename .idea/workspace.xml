@@ -4,40 +4,123 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e42c7180-1f7a-4645-96d4-3b15d7d1098f" name="Default Changelist" comment="Restructuration du projet pour que Maven puisse fonctionner">
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Controller/SimpleClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/Album.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/AudioBook.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/AudioElement.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/Category.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/Genre.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/Language.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/PlayList.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jMusicHub/Model/Song.class" beforeDir="false" />
+    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Version finale">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoAlbumFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoElementFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoPlayListFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetGLPOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetGLPOO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/01. Call Out My Name.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Call out my name.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/02. Try Me.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Try me.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/03. Wasted Times.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Wasted times.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/04. I Was Never There (feat. Gesaffelstein).wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/I was never there.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/05. Hurt You (feat. Gesaffelstein).wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Hurt you.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/06. Privilege.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Privilege.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/albums.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/albums.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/elements.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/elements.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/XMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/XMLHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/commandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/commandController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
-  <component name="ProjectId" id="1rwH2yuh5GTgczGcaCHDqQjv1G2" />
+  <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="Arthur" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="Arthur" />
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="ProjectId" id="1pUIqEKbbEE4eikPTANScVIz8yp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
-    <option name="showMembers" value="true" />
-    <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ServerJMusicHub/src" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="Application.MainServer">
-    <configuration name="MainClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Model.Exceptions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src" />
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\files" />
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\src\Controller" />
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Controller" />
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Exceptions" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Controller" />
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="Controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="Model" />
+      <recent name="Controller.Controller" />
+      <recent name="Controller" />
+      <recent name="View" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.MainServer (1)">
+    <configuration name="ClientConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <module name="JMusicHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.View.MainClient" />
       <module name="ProjetGLPOO" />
       <extension name="coverage">
@@ -50,7 +133,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="MainClient" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.MainClient" />
+      <module name="ProjetGLPOO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient(1)" type="Application" factoryName="Application" singleton="false" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="client.View.MainClient" />
+      <module name="ProjetGLPOO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainServer (1)" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="server.View.MainServer" />
       <module name="ProjetGLPOO" />
       <extension name="coverage">
@@ -63,58 +172,132 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProjetGLPOO" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list />
-            </option>
-            <option name="pomFileName" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
+    <configuration name="MainServer" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-16" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="MAIN_CLASS_NAME" value="View.MainServer" />
+      <module name="ServerJMusicHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.ServerConnection" />
+      <module name="ServerJMusicHub" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <list>
-      <item itemvalue="Application.MainClient" />
       <item itemvalue="Application.MainServer" />
-      <item itemvalue="Maven.ProjetGLPOO" />
+      <item itemvalue="Application.ClientConnection" />
+      <item itemvalue="Application.MainClient" />
+      <item itemvalue="Application.ServerConnection" />
+      <item itemvalue="Application.MainServer (1)" />
+      <item itemvalue="Application.MainClient(1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainServer" />
+        <item itemvalue="Application.MainClient(1)" />
         <item itemvalue="Application.MainClient" />
+        <item itemvalue="Application.MainServer (1)" />
+        <item itemvalue="Application.ServerConnection" />
+        <item itemvalue="Application.ClientConnection" />
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e42c7180-1f7a-4645-96d4-3b15d7d1098f" name="Default Changelist" comment="" />
-      <created>1619880030071</created>
+      <changelist id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="" />
+      <created>1615231432789</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1619880030071</updated>
+      <updated>1615231432789</updated>
     </task>
-    <task id="LOCAL-00001" summary="Restructuration du projet pour que Maven puisse fonctionner">
-      <created>1619881674249</created>
+    <task id="LOCAL-00001" summary="Structure du projet">
+      <created>1617065624289</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1619881674249</updated>
+      <updated>1617065624289</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Structure du projet">
+      <created>1617703946917</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1617703946917</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Structure du projet">
+      <created>1617724626699</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1617724626699</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Interface administrateur implementée">
+      <created>1617896250945</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1617896250945</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Interface administrateur implementée">
+      <created>1617896378423</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1617896378423</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Interface administrateur implementée">
+      <created>1618160195426</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1618160195426</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Interface administrateur implementée">
+      <created>1619721110111</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1619721110111</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Interface administrateur implementée">
+      <created>1619721181495</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1619721181495</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Interface administrateur implementée">
+      <created>1619721327609</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1619721327609</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Version finale">
+      <created>1619876297502</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1619876297502</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,7 +305,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -130,8 +325,64 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Restructuration du projet pour que Maven puissent fonctionner" />
-    <MESSAGE value="Restructuration du projet pour que Maven puisse fonctionner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Restructuration du projet pour que Maven puisse fonctionner" />
+    <MESSAGE value="Structure du projet" />
+    <MESSAGE value="Interface administrateur implementée" />
+    <MESSAGE value="Version finale" />
+    <option name="LAST_COMMIT_MESSAGE" value="Version finale" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Controller/SimpleClient.java</url>
+          <line>69</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ServerJMusicHub/src/Controller/MusicHubController.java</url>
+          <line>311</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ServerJMusicHub/src/Controller/XMLHandler.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ServerJMusicHub/src/Controller/XMLHandler.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ServerJMusicHub/src/Controller/commandController.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ServerJMusicHub/src/Controller/MusicHubController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/Controller/commandController.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/server/Controller/commandController.java</url>
+          <line>235</line>
+          <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="javax.xml.transform.TransformerException" package="javax.xml.transform" />
+          <option name="timeStamp" value="54" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
