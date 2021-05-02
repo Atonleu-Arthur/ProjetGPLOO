@@ -1,0 +1,49 @@
+<changelist name="Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]" date="1619956559104" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Update at 02/05/2021 13:51 [Default Changelist]" />
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/Model/Album.class" />
+    <option name="AFTER_PATH" value="target/classes/Model/Album.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/Album.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/XMLHandler.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/XMLHandler.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/XMLHandler.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/Logs.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/Logs.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/Logs.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/ServerThread.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/ServerThread.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/ServerThread.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/MusicHubController.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/MusicHubController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/MusicHubController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/client/Controller/AudioClient.class" />
+    <option name="AFTER_PATH" value="target/classes/client/Controller/AudioClient.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/AudioClient.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/commandController.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/commandController.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/commandController.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/FirstServer.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/FirstServer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/FirstServer.class" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="target/classes/server/Controller/AudioServer.class" />
+    <option name="AFTER_PATH" value="target/classes/server/Controller/AudioServer.class" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51_[Default_Changelist]/AudioServer.class" />
+  </binary>
+</changelist>
