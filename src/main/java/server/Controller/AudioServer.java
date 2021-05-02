@@ -26,7 +26,7 @@ public class AudioServer {
             throw new IllegalArgumentException("expected sound file arg");
         File soundFile = AudioUtil.getSoundFile(song);
 
-        System.out.println("server: " + soundFile.getName());
+        System.out.println("[server] : " + soundFile.getName() +".\n Press h to display the administration menu ");
 
         try (ServerSocket serverSocker = new ServerSocket(4895);
              FileInputStream in = new FileInputStream(soundFile)) {

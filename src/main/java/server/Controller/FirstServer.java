@@ -29,7 +29,7 @@ public class FirstServer extends AbstractServer
 			System.out.println("[SERVER] Server waiting for connection...");
 			while (true) {
 				Socket socket = listerner.accept();//establishes connection
-				System.out.println("[SERVER] Connected as " + ip);
+				System.out.println("[SERVER] Connected as " + ip+".\n Press h to display the administration menu ");
 			//ServerThread serverThread = new ServerThread(socket);
 			//	clients.add(clientHandler);
 			     // pool.execute(serverThread);

@@ -5,16 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Restructuration et du projet implémentation d'une partie des logs">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/View/ManageAudio.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/AudioUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -304,7 +306,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619955443778</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Restructuration et du projet implémentation d'une partie des logs">
+      <created>1619956614842</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1619956614842</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Restructuration et du projet implémentation d'une partie des logs">
+      <created>1619957875781</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1619957875781</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -377,14 +393,14 @@
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="64" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/server/Controller/commandController.java</url>
           <line>235</line>
           <option name="timeStamp" value="65" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/client/View/MainClient.java</url>
+          <line>131</line>
+          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="javax.xml.transform.TransformerException" package="javax.xml.transform" />

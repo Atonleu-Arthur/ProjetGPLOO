@@ -16,9 +16,8 @@ public class MainClient {
     public static void main(String[] args) throws IOException {
 
         final String SERVER_IP ="localhost";
-
+        MainClient mainClient = new MainClient();
        SimpleClient c1 = new SimpleClient();
-       AudioClient c2 = new AudioClient();
 
         System.out.println("                      WELCOME TO  MUSICHUB 2.0                             \n\nTo listen music, please select an album or a playlist and type the song's name and the listen will be start.                \n\n                      HOPE YOU LIKE IT                        \n\n");
 
@@ -68,7 +67,12 @@ public class MainClient {
 
 
                     try {
-                        c2.init();
+                       // AudioClient c2 = new AudioClient();
+                       AudioClient audioClient= new AudioClient();
+                        Thread.sleep(100); // given clip.drain a chance to start
+                        MainClient.ManageAudio(audioClient);
+
+
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -97,7 +101,7 @@ public class MainClient {
 
 
                     try {
-                        c2.init();
+                       // c2.init();
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
@@ -111,6 +115,37 @@ public class MainClient {
         }
     }
 
+    public static void  ManageAudio(AudioClient audioClient){
+        try {
+            Scanner scanner = new Scanner(System.in);
+           // AudioClient audioClient= new AudioClient();
+            System.out.println(">> Appuyer sur m pour arrêter la musique et afficher le menu: ");
+            // AudioClient c2 = new AudioClient();
+          //  c2.init();
+            String choice =null;
+            Boolean value=true;
+            while (value==true){
+                System.out.print(">> ");
+                choice = scanner.nextLine();
+                switch (choice.charAt(0)) {
+                    case 'm'://
+                      audioClient.stop();
+                        value=false;
+                        break;
+                    default:
+                        System.out.println(">> m pour arrêter: ");
+                        choice = scanner.nextLine();
+                        value=true;
+                        break;
+
+                }
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
     private static void printAvailableCommands() {
         System.out.println(">> t: display the album titles, ordered by date");
         System.out.println(">> g: display songs of an album");
