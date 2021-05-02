@@ -107,6 +107,8 @@ public class MusicHubController {
 		return titleList.toString();
 	}
 
+
+
 	public String getPlaylistsList(){
 		StringBuffer playlist = new StringBuffer();
 		for (PlayList playList:playlists) {
@@ -146,6 +148,28 @@ public class MusicHubController {
 				}
 			}
 		return songsInAlbum;
+
+	}
+
+	public List<AudioElement> getPlaylistSongs (String playlistTitle) throws NoPlayListFoundException {
+		PlayList thePlaylist = null;
+		ArrayList<AudioElement> songsInPlaylist = new ArrayList<AudioElement>();
+		for (PlayList al : playlists) {
+			if (al.getTitle().toLowerCase().equals(playlistTitle.toLowerCase())) {
+				thePlaylist = al;
+				break;
+			}
+		}
+		if (thePlaylist == null) throw new NoPlayListFoundException("No album with this title in the MusicHub!");
+
+		List<UUID> ElementsIDs = thePlaylist.getElements();
+		for (UUID id : ElementsIDs)
+			for (AudioElement el : elements) {
+				if (el instanceof Song) {
+					if (el.getUUID().equals(id)) songsInPlaylist.add(el);
+				}
+			}
+		return songsInPlaylist;
 
 	}
 

@@ -189,9 +189,10 @@ public class commandController {
             AudioElement ae = itael.next();
             System.out.println(ae.getTitle());
         }
-        while (choice.charAt(0)!= 'n') 	{
+        String elementTitle = "initialisation";
+        while (elementTitle.charAt(0)!= 'n') 	{
             System.out.println("Type the name of the audio element you wish to add or 'n' to exit:");
-            String elementTitle = scan.nextLine();
+            elementTitle = scan.nextLine();
             try {
                 theHub.addElementToPlayList(elementTitle, playListTitle);
             } catch (NoPlayListFoundException ex) {
@@ -207,7 +208,7 @@ public class commandController {
             }
 
             System.out.println("Type y to add a new one, n to end");
-            choice = scan.nextLine();
+            elementTitle = scan.nextLine();
         }
         System.out.println("Playlist created!");
 

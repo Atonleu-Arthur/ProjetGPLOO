@@ -22,10 +22,7 @@ public class MainClient {
         System.out.println("                      WELCOME TO  MUSICHUB 2.0                             \n\nTo listen music, please select an album or a playlist and type the song's name and the listen will be start.                \n\n                      HOPE YOU LIKE IT                        \n\n");
 
 
-        System.out.println(">> [CLIENT] Type h for available commands");
-        System.out.print(">>");
-        Scanner scan = new Scanner(System.in);
-        String choice = scan.nextLine();
+        String choice = "1";
 
         String albumTitle = null;
         String playlistTitle = null;
@@ -34,35 +31,41 @@ public class MainClient {
 
         if (choice.length() == 0) System.exit(0);
         while (true) 	{
+
+            System.out.println(">> [CLIENT] Type h for available commands");
+            System.out.print(">>");
+            Scanner scan = new Scanner(System.in);
+            choice = scan.nextLine();
+
             switch (choice.charAt(0)) {
                 case 'h':
                     printAvailableCommands();
-                    System.out.print(">>");
-                    choice = scan.nextLine();
                     break;
-                case 't':
-                    //album titles, ordered by date
-                    c1.connect(SERVER_IP,choice);
-                    //musicTitle = scan.nextLine();
 
-                    printAvailableCommands();
-                    System.out.print(">>");
-                    choice = scan.nextLine();
-                    break;
                 case 'g':
                     //songs of an album, sorted by genre
-                    System.out.println(">> Songs of an album sorted by genre will be displayed; enter the album name.\n>> Available albums are:(Enter the name of the album name to display the songs of this album)\n");
+                    System.out.println(">> Albums list : \n");
                     c1.connect(SERVER_IP,"t");
+                    System.out.println(">> Which album do you want to play ? (press q to go to the main menu)");
                     System.out.print(">>");
                     albumTitle = scan.nextLine();
+                    System.out.print(albumTitle+"\n");
+                    if (!albumTitle.equals("q"))
+                    {
+
+
                         //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
 
                     System.out.println(">> Songs of the album : ");
                     c1.connect(SERVER_IP,"o"+albumTitle);
 
-                    System.out.println(">> what song do you want to play ? ");
+                    System.out.println(">> Which song do you want to play ? (press q to go to the main menu)");
                     System.out.print(">>");
                     musicTitle = scan.nextLine();
+                    if (!musicTitle.equals("q"))
+                    {
+
+
                     c1.connect(SERVER_IP,"l"+musicTitle);
 
 
@@ -81,37 +84,59 @@ public class MainClient {
                     printAvailableCommands();
                     System.out.print(">>");
                     choice = scan.nextLine();
+                    }
+                    }
                     break;
 
                 case 'p':
                     //playlist list
-                    System.out.println(">> Playlist list :");
+                    System.out.println(">> Playlist list :\n");
                     c1.connect(SERVER_IP,"p");
+                    System.out.println(">> Which playlist do you want to play ? ");
                     System.out.print(">>");
                     playlistTitle = scan.nextLine();
+
+                    if (!playlistTitle.equals("q"))
+                    {
+
+
                     //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
 
                     System.out.println(">> Songs of the playlist : ");
                     c1.connect(SERVER_IP,"i"+playlistTitle);
 
-                    System.out.println(">> what song do you want to play ? ");
-                    System.out.print(">>");
-                    musicTitle = scan.nextLine();
-                    c1.connect(SERVER_IP,"l"+musicTitle);
+                        System.out.println(">> Which song do you want to play ? (press q to go to the main menu)");
+                        System.out.print(">>");
+                        musicTitle = scan.nextLine();
+                        if (!musicTitle.equals("q"))
+                        {
 
 
-                    try {
-                       // c2.init();
-                    } catch (Exception e) {
-                        e.printStackTrace();
+                            c1.connect(SERVER_IP,"l"+musicTitle);
+
+
+                            try {
+                                // AudioClient c2 = new AudioClient();
+                                AudioClient audioClient= new AudioClient();
+                                Thread.sleep(100); // given clip.drain a chance to start
+                                MainClient.ManageAudio(audioClient);
+
+
+                            } catch (Exception e) {
+                                e.printStackTrace();
+                            }
+
+
+                            printAvailableCommands();
+                            System.out.print(">>");
+                            choice = scan.nextLine();
+                        }
                     }
-
-
-                    printAvailableCommands();
-                    choice = scan.nextLine();
                     break;
 
             }
+
+
         }
     }
 
@@ -147,8 +172,7 @@ public class MainClient {
         }
     }
     private static void printAvailableCommands() {
-        System.out.println(">> t: display the album titles, ordered by date");
-        System.out.println(">> g: display songs of an album");
+        System.out.println(">> g: display album");
         System.out.println(">> p: display playlist");
     }
 }

@@ -1,7 +1,10 @@
 package server.Controller;
 
 import Model.Album;
+import Model.AudioElement;
 import Model.Exceptions.NoAlbumFoundException;
+import Model.Exceptions.NoElementFoundException;
+import Model.Exceptions.NoPlayListFoundException;
 import Model.Song;
 
 import java.io.IOException;
@@ -58,15 +61,24 @@ public class ServerThread extends Thread {
 
 					StringBuilder requestAlbum = new StringBuilder(request);
 					requestAlbum = requestAlbum.deleteCharAt(0);
-					for (Song al : musicHubController.getAlbumSongsSortedByGenre(requestAlbum.toString()))
+					try { for (AudioElement al : musicHubController.getAlbumSongs(requestAlbum.toString()))
 						songlist.append(">> "+al.getTitle()+ "\n");
+						}catch (NoAlbumFoundException e){
+							output.writeObject("Can't find the album");
+						}
 					output.writeObject(songlist.toString());
 					break;
 
 				case 'i' :
 					StringBuilder requestPlaylist = new StringBuilder(request);
 					requestPlaylist = requestPlaylist.deleteCharAt(0);
-					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(requestPlaylist.toString()));
+
+					try {
+						output.writeObject(musicHubController.getPlaylistSongs(requestPlaylist.toString()));
+					}catch (NoPlayListFoundException e){
+						output.writeObject("Playlist introuvable");
+					}
+
 					break;
 
 				case 'l' :
