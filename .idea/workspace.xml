@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Restructuration et du projet implémentation d'une partie des logs" />
+    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Restructuration et du projet implémentation d'une partie des logs">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Album.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Model/Album.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,7 +92,7 @@
       <recent name="View" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainServer (1)">
+  <component name="RunManager" selected="Application.MainClient(1)">
     <configuration name="ClientConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <module name="JMusicHub" />
       <extension name="coverage">
@@ -186,8 +197,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainClient(1)" />
-        <item itemvalue="Application.MainClient" />
         <item itemvalue="Application.MainServer (1)" />
+        <item itemvalue="Application.MainClient" />
         <item itemvalue="Application.ServerConnection" />
         <item itemvalue="Application.ClientConnection" />
       </list>
@@ -286,7 +297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619911264381</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Restructuration et du projet implémentation d'une partie des logs">
+      <created>1619955443778</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1619955443778</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
