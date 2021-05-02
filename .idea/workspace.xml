@@ -5,18 +5,132 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Restructuration et du projet implémentation d'une partie des logs">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/client/View/ManageAudio.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__classworlds_classworlds_1_1_alpha_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_7_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_chain_commons_chain_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_digester_commons_digester_1_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_validator_commons_validator_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_core_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_decoration_model_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_logging_api_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml5_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_module_xhtml_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_sink_api_1_9_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_site_renderer_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_doxia_doxia_skin_model_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_aether_provider_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_artifact_manager_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_core_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_model_builder_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_api_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_plugin_registry_2_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_profile_2_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_project_2_0_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_repository_metadata_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_maven_settings_builder_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_plugins_maven_surefire_report_plugin_3_0_0_M5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_api_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_reporting_maven_reporting_impl_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_file_management_1_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_shared_maven_shared_io_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_logger_api_3_0_0_M5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_report_parser_3_0_0_M5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_shared_utils_3_0_0_M4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_wagon_wagon_provider_api_1_0_alpha_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_velocity_velocity_tools_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_classworlds_2_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_component_annotations_1_5_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_container_default_1_0_alpha_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_i18n_1_0_beta_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_interpolation_1_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_utils_3_0_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_plexus_plexus_velocity_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_jacoco_maven_plugin_0_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_agent_runtime_0_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_core_0_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jacoco_org_jacoco_report_0_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_8_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_analysis_8_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_8_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_8_0_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_api_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_impl_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_spi_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_aether_aether_util_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_cipher_1_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_plexus_plexus_sec_dispatcher_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_noaop_2_1_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_bean_1_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_inject_plexus_1_4_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__oro_oro_2_0_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_0_b2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Java/LogsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test/Java/SongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_31__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_31__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_09__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_44__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_44__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjetGLPOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetGLPOO.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/AudioUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGLPOO-1.0-SNAPSHOT-shaded.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ProjetGLPOO-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/AudioBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/AudioElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Exceptions/NoAlbumFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Exceptions/NoElementFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Exceptions/NoPlayListFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Language.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/PlayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/SimpleClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AbstractServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ClientHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByAuthor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByDate.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByGenre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/View/MainCommand.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/View/MainServer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/javadoc-bundle-options/javadoc-options-javadoc-resources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/original-ProjetGLPOO-1.0-SNAPSHOT.jar" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +195,7 @@
       <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Exceptions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\rulli\IdeaProjects\ProjetGPLOO\src\Test\Java" />
       <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Controller" />
       <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub" />
     </key>
