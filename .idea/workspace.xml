@@ -4,33 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Version finale">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoAlbumFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoElementFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoPlayListFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjetGLPOO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ProjetGLPOO.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/01. Call Out My Name.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Call out my name.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/02. Try Me.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Try me.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/03. Wasted Times.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Wasted times.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/04. I Was Never There (feat. Gesaffelstein).wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/I was never there.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/05. Hurt You (feat. Gesaffelstein).wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Hurt you.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/06. Privilege.wav" beforeDir="false" afterPath="$PROJECT_DIR$/files/Privilege.wav" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/albums.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/albums.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/elements.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/elements.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/Album.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/XMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/XMLHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/commandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/commandController.java" afterDir="false" />
-    </list>
+    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Restructuration et du projet implémentation d'une partie des logs" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -202,6 +176,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.MainServer" />
+      <item itemvalue="Application.MainClient (1)" />
       <item itemvalue="Application.ClientConnection" />
       <item itemvalue="Application.MainClient" />
       <item itemvalue="Application.ServerConnection" />
@@ -297,7 +272,21 @@
       <option name="project" value="LOCAL" />
       <updated>1619876297502</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Restructuration et du projet implémentation d'une partie des logs">
+      <created>1619911206697</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1619911206698</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Restructuration et du projet implémentation d'une partie des logs">
+      <created>1619911264381</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1619911264381</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -328,7 +317,8 @@
     <MESSAGE value="Structure du projet" />
     <MESSAGE value="Interface administrateur implementée" />
     <MESSAGE value="Version finale" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version finale" />
+    <MESSAGE value="Restructuration et du projet implémentation d'une partie des logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restructuration et du projet implémentation d'une partie des logs" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
