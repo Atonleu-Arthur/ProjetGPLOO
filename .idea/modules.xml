@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/JMusicHub.iml" filepath="$PROJECT_DIR$/JMusicHub.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ServerJMusicHub/ServerJMusicHub.iml" filepath="$PROJECT_DIR$/ServerJMusicHub/ServerJMusicHub.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjetGLPOO.iml" filepath="$PROJECT_DIR$/ProjetGLPOO.iml" />
     </modules>
   </component>
 </project>
