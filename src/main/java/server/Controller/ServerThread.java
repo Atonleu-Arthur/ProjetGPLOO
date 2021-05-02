@@ -75,7 +75,7 @@ public class ServerThread extends Thread {
 
 					requestPlaylist = requestPlaylist.deleteCharAt(0);
 
-					for (AudioElement al : musicHubController.getAlbumSongs(requestPlaylist.toString()))
+					for (AudioElement al : musicHubController.getPlaylistSongs(requestPlaylist.toString()))
 						playlistList.append(">> "+al.getTitle()+ "\n");
 					/**
 					 * Quand je met un catch avec NoPlaylistFound ca cree un erreur
@@ -131,6 +131,8 @@ public class ServerThread extends Thread {
 			 * logWrite error
 			 */
 			logs.writeError("[SERVER]: "+e.getMessage());
+		} catch (NoPlayListFoundException exception) {
+			exception.printStackTrace();
 		} finally {
 			try {
 				output.close();
