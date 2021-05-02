@@ -98,10 +98,6 @@ public class MainClient {
 
                     if (!playlistTitle.equals("q"))
                     {
-
-
-                    //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
-
                     System.out.println(">> Songs of the playlist : ");
                     c1.connect(SERVER_IP,"i"+playlistTitle);
 
@@ -111,9 +107,7 @@ public class MainClient {
                         if (!musicTitle.equals("q"))
                         {
 
-
                             c1.connect(SERVER_IP,"l"+musicTitle);
-
 
                             try {
                                 // AudioClient c2 = new AudioClient();

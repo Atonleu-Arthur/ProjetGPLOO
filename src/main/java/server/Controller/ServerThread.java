@@ -70,14 +70,19 @@ public class ServerThread extends Thread {
 					break;
 
 				case 'i' :
+					StringBuffer playlistList = new StringBuffer();
 					StringBuilder requestPlaylist = new StringBuilder(request);
+
 					requestPlaylist = requestPlaylist.deleteCharAt(0);
 
-					try {
-						output.writeObject(musicHubController.getPlaylistSongs(requestPlaylist.toString()));
-					}catch (NoPlayListFoundException e){
-						output.writeObject("Playlist introuvable");
-					}
+					for (AudioElement al : musicHubController.getAlbumSongs(requestPlaylist.toString()))
+						playlistList.append(">> "+al.getTitle()+ "\n");
+					/**
+					 * Quand je met un catch avec NoPlaylistFound ca cree un erreur
+					 * c'est pour ca que j'ai enlve le catch ici
+					 */
+					output.writeObject(playlistList.toString());
+
 
 					break;
 
