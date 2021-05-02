@@ -13,10 +13,16 @@ public class SimpleClient  {
 	private ObjectOutputStream output;
 	private ObjectInputStream input;
 	private Socket socket;
+	private char erreur = '0';
 
-
+	/**
+	 *
+	 * Classe qui gère la connexion au serveur simple afin de pouvoir lire les fichiers audio
+	 * @author lucas D, Arthur A
+	 */
 	public void connect(String ip,String request)
 	{
+
 		int port = 4896;
 		try  {
 			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
@@ -29,9 +35,18 @@ public class SimpleClient  {
 			//String textToSend = new String("send me the student info!");
 			//System.out.println("text sent to the server: " + textToSend);
 			output.writeObject(request);		//serialize and write the String to the stream
-
+			erreur = '0';
 			String requestResponse = (String) input.readObject();	//deserialize and read the Student object from the stream
+
+
+			if (requestResponse.contains("Can't find"))
+			{
+
+
+			}
+
 			System.out.println(requestResponse);
+
 		} catch  (UnknownHostException uhe) {
 			uhe.printStackTrace();
 		}
@@ -66,6 +81,8 @@ public class SimpleClient  {
 		String request = null;
 		return null;
 	}
-
+	public char getErreur(){
+		return erreur;
+	}
 
 }

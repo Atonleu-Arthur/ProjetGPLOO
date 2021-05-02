@@ -17,6 +17,7 @@ public class AudioServer {
     public static void init(String song) throws IOException {
 
         /**
+         * @author Arthur A, Lucas D
          * Création d'un objet log pour
          * l'ecriture des erreurs dans
          * fichier horodatés

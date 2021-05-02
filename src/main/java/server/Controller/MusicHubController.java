@@ -34,6 +34,11 @@ class SortByAuthor implements Comparator<AudioElement>
 }
 
 public class MusicHubController {
+
+	/**
+	 * @author Arthur A, Lucas D
+	 * Classe qui gère toutes les manipulation qui récupère les informations concernant les éléments demandés par le client
+	 */
 	private List<Album> albums;
 	private List<PlayList> playlists;
 	private List<AudioElement> elements;

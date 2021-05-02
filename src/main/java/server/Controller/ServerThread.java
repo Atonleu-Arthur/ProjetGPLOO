@@ -17,6 +17,12 @@ import java.net.Socket;
  * This thread is responsible to handle client connection.
  */
 public class ServerThread extends Thread {
+
+	/**
+	 * @author Arthur A, Lucas D
+	 * Cette classe est un Thread qui permet de gérer les différentes réquètes émises par le client
+	 *
+	 */
     private Socket socket;
 	private ObjectInputStream input;
 	private ObjectOutputStream output;
@@ -65,6 +71,7 @@ public class ServerThread extends Thread {
 						songlist.append(">> "+al.getTitle()+ "\n");
 						}catch (NoAlbumFoundException e){
 							output.writeObject("Can't find the album");
+							logs.writeError("The album requested : "+requestAlbum.toString()+" can't be found");
 						}
 					output.writeObject(songlist.toString());
 					break;
@@ -75,12 +82,12 @@ public class ServerThread extends Thread {
 
 					requestPlaylist = requestPlaylist.deleteCharAt(0);
 
-					for (AudioElement al : musicHubController.getPlaylistSongs(requestPlaylist.toString()))
+					try { for (AudioElement al : musicHubController.getPlaylistSongs(requestPlaylist.toString()))
 						playlistList.append(">> "+al.getTitle()+ "\n");
-					/**
-					 * Quand je met un catch avec NoPlaylistFound ca cree un erreur
-					 * c'est pour ca que j'ai enlve le catch ici
-					 */
+					}catch (NoPlayListFoundException e){
+						output.writeObject("Can't find the playlist");
+						logs.writeError("The playlist requested : "+requestPlaylist.toString()+" can't be found");
+					}
 					output.writeObject(playlistList.toString());
 
 
@@ -90,15 +97,20 @@ public class ServerThread extends Thread {
 					StringBuilder requestSong = new StringBuilder(request);
 					requestAlbum = requestSong.deleteCharAt(0);
 					request = requestAlbum.toString();
+					try {
+						AudioServer audio = new AudioServer();
+						output.writeObject("Serveur audio Prêt");
+						audio.init("files\\" + request + ".wav");
+						}catch (Exception ex){
+							output.writeObject("Can't find the song");
+							System.out.println("Can't find the song");
+						}
 
-					AudioServer audio = new AudioServer();
-					output.writeObject("Serveur audio Prêt");
-					audio.init("files\\"+request+".wav");
 
 
 					break;
 				default:
-					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(request)); // Pareil ici
+					output.writeObject(musicHubController.getAlbumSongsSortedByGenre(request));
 					break;
 
 
@@ -131,9 +143,7 @@ public class ServerThread extends Thread {
 			 * logWrite error
 			 */
 			logs.writeError("[SERVER]: "+e.getMessage());
-		} catch (NoPlayListFoundException exception) {
-			exception.printStackTrace();
-		} finally {
+		}  finally {
 			try {
 				output.close();
 				input.close();

@@ -3,6 +3,12 @@ package server.Controller;
 import java.io.File;
 
 public class AudioUtil {
+    /**
+     * @author Lucas D, Emmanuel D
+     * Création d'un objet log pour
+     * l'ecriture des erreurs dans
+     * fichier horodatés
+     */
         public static File getSoundFile(String fileName) {
             File soundFile = new File(fileName);
             if (!soundFile.exists() || !soundFile.isFile())

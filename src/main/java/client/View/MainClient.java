@@ -12,7 +12,12 @@ import java.net.Socket;
 import java.util.Scanner;
 
 public class MainClient {
-
+    /**
+     *
+     * Classe qui gère tout l'affichage du programme Client
+     *
+     * @author lucas
+     */
     public static void main(String[] args) throws IOException {
 
         final String SERVER_IP ="localhost";
@@ -50,41 +55,41 @@ public class MainClient {
                     System.out.print(">>");
                     albumTitle = scan.nextLine();
                     System.out.print(albumTitle+"\n");
-                    if (!albumTitle.equals("q"))
-                    {
+                    if (!albumTitle.equals("q")) {
 
 
                         //System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
 
-                    System.out.println(">> Songs of the album : ");
-                    c1.connect(SERVER_IP,"o"+albumTitle);
+                        System.out.println(">> Songs of the album : ");
+                        c1.connect(SERVER_IP, "o" + albumTitle);
 
-                    System.out.println(">> Which song do you want to play ? (press q to go to the main menu)");
-                    System.out.print(">>");
-                    musicTitle = scan.nextLine();
-                    if (!musicTitle.equals("q"))
-                    {
+                        if (c1.getErreur() == '0') {
 
-
-                    c1.connect(SERVER_IP,"l"+musicTitle);
+                            System.out.println(">> Which song do you want to play ? (press q to go to the main menu)");
+                            System.out.print(">>");
+                            musicTitle = scan.nextLine();
+                            if (!musicTitle.equals("q")) {
 
 
-                    try {
-                       // AudioClient c2 = new AudioClient();
-                       AudioClient audioClient= new AudioClient();
-                        Thread.sleep(100); // given clip.drain a chance to start
-                        MainClient.ManageAudio(audioClient);
+                                c1.connect(SERVER_IP, "l" + musicTitle);
+                                if (c1.getErreur() == '0') {
+
+                                    try {
+                                        // AudioClient c2 = new AudioClient();
+                                        AudioClient audioClient = new AudioClient();
+                                        Thread.sleep(100); // given clip.drain a chance to start
+                                        MainClient.ManageAudio(audioClient);
 
 
-                    } catch (Exception e) {
-                        e.printStackTrace();
-                    }
+                                    } catch (Exception e) {
+                                        System.out.println("Error  : Can't read song on the server");
+                                    }
 
 
-                    printAvailableCommands();
-                    System.out.print(">>");
-                    choice = scan.nextLine();
-                    }
+                                    System.out.print(">>");
+                                }
+                            }
+                        }
                     }
                     break;
 
@@ -98,32 +103,34 @@ public class MainClient {
 
                     if (!playlistTitle.equals("q"))
                     {
-                    System.out.println(">> Songs of the playlist : ");
+                        System.out.println(">> Songs of the playlist : ");
                     c1.connect(SERVER_IP,"i"+playlistTitle);
+                        if (c1.getErreur() == '0') {
 
-                        System.out.println(">> Which song do you want to play ? (press q to go to the main menu)");
-                        System.out.print(">>");
-                        musicTitle = scan.nextLine();
-                        if (!musicTitle.equals("q"))
-                        {
-
-                            c1.connect(SERVER_IP,"l"+musicTitle);
-
-                            try {
-                                // AudioClient c2 = new AudioClient();
-                                AudioClient audioClient= new AudioClient();
-                                Thread.sleep(100); // given clip.drain a chance to start
-                                MainClient.ManageAudio(audioClient);
-
-
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-
-
-                            printAvailableCommands();
+                            System.out.println(">> Which song do you want to play ? (press q to go to the main menu)");
                             System.out.print(">>");
-                            choice = scan.nextLine();
+                            musicTitle = scan.nextLine();
+                            if (!musicTitle.equals("q")) {
+
+                                c1.connect(SERVER_IP, "l" + musicTitle);
+                                if (c1.getErreur() == '0') {
+                                    try {
+                                        // AudioClient c2 = new AudioClient();
+                                        AudioClient audioClient = new AudioClient();
+                                        Thread.sleep(100); // given clip.drain a chance to start
+                                        MainClient.ManageAudio(audioClient);
+
+
+                                    } catch (Exception e) {
+                                        e.printStackTrace();
+                                    }
+
+
+                                    printAvailableCommands();
+                                    System.out.print(">>");
+                                    choice = scan.nextLine();
+                                }
+                            }
                         }
                     }
                     break;
@@ -166,7 +173,7 @@ public class MainClient {
         }
     }
     private static void printAvailableCommands() {
-        System.out.println(">> g: display album");
-        System.out.println(">> p: display playlist");
+        System.out.println(">> g: display the album list");
+        System.out.println(">> p: display the playlist list");
     }
 }

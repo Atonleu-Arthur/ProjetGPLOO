@@ -4,9 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Finalisation">
+    <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Restructuration et du projet implémentation d'une partie des logs">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/files/playlists.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/playlists.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/SimpleClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/SimpleClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +44,6 @@
     </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Arthur" />
         <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
@@ -85,7 +91,7 @@
       <recent name="View" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainClient(1)">
+  <component name="RunManager" selected="Application.MainClient (1)">
     <configuration name="ClientConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <module name="JMusicHub" />
       <extension name="coverage">
@@ -189,11 +195,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.MainClient(1)" />
+        <item itemvalue="Application.MainClient (1)" />
         <item itemvalue="Application.MainServer (1)" />
+        <item itemvalue="Application.MainClient(1)" />
         <item itemvalue="Application.MainClient" />
         <item itemvalue="Application.ServerConnection" />
-        <item itemvalue="Application.ClientConnection" />
       </list>
     </recent_temporary>
   </component>
@@ -395,11 +401,6 @@
           <url>file://$PROJECT_DIR$/src/main/java/server/Controller/commandController.java</url>
           <line>236</line>
           <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/client/View/MainClient.java</url>
-          <line>150</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="javax.xml.transform.TransformerException" package="javax.xml.transform" />

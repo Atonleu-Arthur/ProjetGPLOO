@@ -9,7 +9,11 @@ import javax.sound.sampled.*;
 
 
 public class AudioClient implements Runnable {
-
+    /**
+     *
+     * Classe qui gère la connexion au serveur audio afin de pouvoir lire les fichiers audio
+     * @author lucas
+     */
     Socket socket = new Socket("localhost", 4895);
      Thread thread;
     private volatile boolean running = true;
@@ -34,7 +38,7 @@ public class AudioClient implements Runnable {
 
 
     private static synchronized void play(final InputStream in) throws Exception {
-        System.out.println(">> Lecture en cour...");
+        System.out.println(">> Lecture en cours...");
         AudioInputStream ais = AudioSystem.getAudioInputStream(in);
 
        // System.out.println("Lecture");
@@ -78,6 +82,11 @@ public class AudioClient implements Runnable {
 }
 
 class AudioUtil {
+    /**
+     *
+     * Classe qui gère la lecture du fichier audio
+     * @author lucas
+     */
     public static File getSoundFile(String fileName) {
         File soundFile = new File(fileName);
         if (!soundFile.exists() || !soundFile.isFile())
