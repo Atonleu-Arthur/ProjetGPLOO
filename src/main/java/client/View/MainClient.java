@@ -28,11 +28,11 @@ public class MainClient {
         String playlistTitle = null;
         String musicTitle = null;
         boolean indicate =true;
+        System.out.println(">> [CLIENT] Type h for available commands");
 
         if (choice.length() == 0) System.exit(0);
         while (true) 	{
 
-            System.out.println(">> [CLIENT] Type h for available commands");
             System.out.print(">>");
             Scanner scan = new Scanner(System.in);
             choice = scan.nextLine();
