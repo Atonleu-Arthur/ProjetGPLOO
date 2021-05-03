@@ -39,7 +39,9 @@ public class ServerThread extends Thread {
         try {
 
 			/**
-			 *create the streams that will handle the objects coming through the sockets
+			 * @author Atonleu A, Lucas D
+			 * Cette fonction à pour but de réagir aux requètes envoyées par le client
+			 *
 			 */
 			input = new ObjectInputStream(socket.getInputStream());
 			output = new ObjectOutputStream(socket.getOutputStream());

@@ -32,6 +32,12 @@ public class SimpleClient   {
 
 	public void connect(String ip,String request)
 	{
+		/**
+		 *  * @Author Atonleu A, Lucas D
+		 *
+		 * Implementation du design Singleton
+		 * Cette fonction permet de se connecter au serveur pour l'affichage des menu et la lecture des musiques
+		 */
 
 		int port = 4896;
 		try  {
@@ -47,6 +53,8 @@ public class SimpleClient   {
 
 			if (requestResponse.contains("Can't find"))
 			{
+				erreur = '1';
+				System.out.println("Back to the main menu (h for help)");
 			}
 
 			System.out.println(requestResponse);

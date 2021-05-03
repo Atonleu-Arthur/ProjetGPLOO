@@ -69,7 +69,7 @@ public class MainClient {
                                         MainClient.ManageAudio();
 
                                     } catch (Exception e) {
-                                        System.out.println("Error  : Can't read song on the server");
+                                        System.out.println("Error  : Can't read song on the server\nBack to the main menu");
                                     }
                                     System.out.print(">>");
                                 }
