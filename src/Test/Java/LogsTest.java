@@ -5,7 +5,11 @@ import server.Controller.Logs;
 
 import java.io.File;
 import java.io.IOException;
-
+/**
+ * Test de la class Logs
+ *
+ * @author Antoine R
+ */
 public class LogsTest {
 
 

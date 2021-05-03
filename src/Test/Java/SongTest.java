@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 /**
  *
- * @author Emanuel Dabadie
+ * @author Emanuel Dabadie, Antoine R
  */
 public class SongTest {
 
