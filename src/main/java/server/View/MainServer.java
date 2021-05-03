@@ -12,7 +12,7 @@ public class MainServer {
 
         MainServer mainServer = new MainServer();
 
-        new MainCommand(mainServer);
+        new MainCommand();
 
         AbstractServer as = new FirstServer();
         String ip = "localhost";

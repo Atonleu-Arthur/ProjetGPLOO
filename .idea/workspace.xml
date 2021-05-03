@@ -6,44 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Finalisation">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_31__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_31__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_09__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_44__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_44__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_21_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_21_40__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_09_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_09_13__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_18_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_18_40__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/logs.txt" beforeDir="false" afterPath="$PROJECT_DIR$/files/logs.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/client/SimpleClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/SimpleClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/SimpleClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AbstractServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AbstractServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/ClientHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/FirstServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/Logs.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByAuthor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/SortByAuthor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/SortByDate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/SortByGenre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/XMLHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/View/MainCommand.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/View/MainCommand.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/server/View/MainServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/View/MainServer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/ComandeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ComandeTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/LogsTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/LogsTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SimpleServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SimpleServerTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/SongTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SongTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/View/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/View/MainCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/View/MainServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/View/MainServer.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,6 +184,7 @@
     </configuration>
     <list>
       <item itemvalue="Application.MainServer" />
+      <item itemvalue="Application.MainClient (1)" />
       <item itemvalue="Application.ClientConnection" />
       <item itemvalue="Application.MainClient" />
       <item itemvalue="Application.ServerConnection" />

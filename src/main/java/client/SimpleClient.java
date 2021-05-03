@@ -8,7 +8,7 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 /**
- *  * @Author Atonleu A, Lucas D
+ *@Author Atonleu A, Lucas D
  *
  * Implementation du design Singleton
  * Cette classe à pour rôle de d'etablir une connexion avec

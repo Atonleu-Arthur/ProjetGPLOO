@@ -15,7 +15,7 @@ public class MainCommand implements Runnable {
     Thread t;
 
 
-    MainCommand(MainServer mainServer) {
+    MainCommand() {
         t = new Thread(this);
         t.start();
     }

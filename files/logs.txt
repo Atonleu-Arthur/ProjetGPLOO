@@ -1,2 +1,6 @@
 2021.05.02.18:37:24 ! INFO ! Album not found
 2021.05.02.18:37:24 ! ERROR ! Cela na pas fonctionné
+2021.05.03.22:37:22 ! INFO ! Album not found
+2021.05.03.22:37:22 ! ERROR ! Cela na pas fonctionné
+2021.05.03.22:38:29 ! INFO ! Album not found
+2021.05.03.22:38:29 ! ERROR ! Cela na pas fonctionné
