@@ -73,38 +73,5 @@ public class ComandeTest {
        musicHubController.savePlayLists();
     }
 
-    /**
-     * On test si on peut bien suprimer un playlist
-     *
-     * @throws NoPlayListFoundException si jamais on trouve pas la playlist en question
-     */
-    @Test
-    void testdeletePlayList() throws NoPlayListFoundException {
-        musicHubController.deletePlayList(playlist);
-    }
-
-    /**
-     * On test si on peux bien ajouter une playlist
-     * Et si on peux ajouter une music a une playlist
-     *
-     * @throws NoElementFoundException si on trouve pas la music en question qu'on veux rajouter
-     * @throws NoPlayListFoundException Si on trouve pas la playliste
-     */
-    @Test
-    void testaddPlayList() throws NoElementFoundException, NoPlayListFoundException {
-       musicHubController.addPlaylist(pl);
-       musicHubController.addElementToPlayList(elementTitle, playlist);
-   }
-   /*@Test
-    void testaddElementToAlbum(){
-        try {
-            musicHubController.addElementToAlbum(elementTitle, albumTitle);
-        } catch (NoAlbumFoundException e) {
-            e.printStackTrace();
-        } catch (NoElementFoundException e) {
-            e.printStackTrace();
-        }
-    }*/
-
 
 }
