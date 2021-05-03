@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="fr"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>SimpleClient.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ProjetGLPOO</a> &gt; <a href="index.source.html" class="el_package">client.Controller</a> &gt; <span class="el_source">SimpleClient.java</span></div><h1>SimpleClient.java</h1><pre class="source lang-java linenums">package client.Controller;
+
+import Model.Album;
+import Model.Student;
+
+import java.io.*;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+<span class="nc" id="L10">public class SimpleClient  {</span>
+
+
+	private ObjectOutputStream output;
+	private ObjectInputStream input;
+	private Socket socket;
+
+
+	public void connect(String ip,String request)
+	{
+<span class="nc" id="L20">		int port = 4896;</span>
+		try  {
+			//create the socket; it is defined by an remote IP address (the address of the server) and a port number
+<span class="nc" id="L23">			socket = new Socket(ip, port);</span>
+
+			//create the streams that will handle the objects coming and going through the sockets
+<span class="nc" id="L26">			output = new ObjectOutputStream(socket.getOutputStream());</span>
+<span class="nc" id="L27">			input = new ObjectInputStream(socket.getInputStream());</span>
+
+			//String textToSend = new String(&quot;send me the student info!&quot;);
+			//System.out.println(&quot;text sent to the server: &quot; + textToSend);
+<span class="nc" id="L31">			output.writeObject(request);		//serialize and write the String to the stream</span>
+
+<span class="nc" id="L33">			String requestResponse = (String) input.readObject();	//deserialize and read the Student object from the stream</span>
+<span class="nc" id="L34">			System.out.println(requestResponse);</span>
+<span class="nc" id="L35">		} catch  (UnknownHostException uhe) {</span>
+<span class="nc" id="L36">			uhe.printStackTrace();</span>
+		}
+<span class="nc" id="L38">		catch  (IOException ioe) {</span>
+<span class="nc" id="L39">			ioe.printStackTrace();</span>
+		}
+<span class="nc" id="L41">		catch  (ClassNotFoundException cnfe) {</span>
+<span class="nc" id="L42">			cnfe.printStackTrace();</span>
+		}
+		finally {
+			try {
+<span class="nc" id="L46">				input.close();</span>
+<span class="nc" id="L47">				output.close();</span>
+<span class="nc" id="L48">				socket.close();</span>
+<span class="nc" id="L49">			} catch (IOException ioe) {</span>
+<span class="nc" id="L50">				ioe.printStackTrace();</span>
+<span class="nc" id="L51">			}</span>
+		}
+<span class="nc" id="L53">	}</span>
+	public void disconnect()
+	{
+		try {
+<span class="nc" id="L57">			input.close();</span>
+<span class="nc" id="L58">			output.close();</span>
+<span class="nc" id="L59">			socket.close();</span>
+<span class="nc" id="L60">		} catch (IOException ioe) {</span>
+<span class="nc" id="L61">			ioe.printStackTrace();</span>
+<span class="nc" id="L62">		}</span>
+<span class="nc" id="L63">	}</span>
+
+	public String RequestReceived(){
+<span class="nc" id="L66">		String request = null;</span>
+<span class="nc" id="L67">		return null;</span>
+	}
+
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.6.202009150832</span></div></body></html>
