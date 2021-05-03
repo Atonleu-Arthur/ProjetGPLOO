@@ -1,10 +1,11 @@
-import Model.Song;
+import server.Model.Song;
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
-import javax.lang.model.element.Element;
-
+/**
+ *
+ * @author Emanuel Dabadie
+ */
 public class SongTest {
 
     Song aSong = new Song("titreduson", "artisteduson", 20,"content.wav", "jazz");

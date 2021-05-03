@@ -10,10 +10,9 @@ import java.util.concurrent.Executors;
 public class FirstServer extends AbstractServer
 {
 	/**
-	 * @author Arthur
-	 * Création d'un objet log pour
-	 * l'ecriture des erreurs dans
-	 * fichier horodatés
+	 * @author Atonleu A
+	 * Cette classe a pour rôle de capturer une connexion client et
+	 * d'en établir la communication client-server via les websockets
 	 */
 	Logs logs = new Logs();
 	private String ip = "localhost";

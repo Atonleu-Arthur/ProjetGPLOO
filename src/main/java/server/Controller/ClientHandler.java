@@ -6,6 +6,12 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/**
+ * @author Atonleu A
+ * Cette classe a pour rôle de capturer une connexion client et
+ * d'en établir la communication client-server via les websockets
+ */
+
 public class ClientHandler implements Runnable {
     private PrintWriter output;
     private BufferedReader input;

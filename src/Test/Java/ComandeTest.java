@@ -1,25 +1,20 @@
 //package Test;
 
 
-import static org.junit.jupiter.api.Assertions.*;
-
-import Model.Exceptions.NoAlbumFoundException;
-import Model.Exceptions.NoElementFoundException;
-import Model.Exceptions.NoPlayListFoundException;
-import Model.PlayList;
-import client.Controller.SimpleClient;
+import server.Model.Exceptions.NoAlbumFoundException;
+import server.Model.Exceptions.NoElementFoundException;
+import server.Model.Exceptions.NoPlayListFoundException;
+import server.Model.PlayList;
 import org.junit.jupiter.api.Test;
 
 import server.Controller.MusicHubController;
 
 
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.Socket;
 import java.util.Iterator;
-import java.util.List;
 
 /**
  * test les different commande possible

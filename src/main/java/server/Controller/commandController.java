@@ -1,12 +1,11 @@
 package server.Controller;
 
 
-import Model.*;
-import Model.Exceptions.NoAlbumFoundException;
-import Model.Exceptions.NoElementFoundException;
-import Model.Exceptions.NoPlayListFoundException;
+import server.Model.*;
+import server.Model.Exceptions.NoAlbumFoundException;
+import server.Model.Exceptions.NoElementFoundException;
+import server.Model.Exceptions.NoPlayListFoundException;
 
-import java.io.IOException;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -16,10 +15,9 @@ public class commandController {
 
     Scanner scan = new Scanner(System.in);
     /**
-     * Création d'un objet log pour
-     * l'ecriture des erreurs dans
-     * fichier horodatés
-     * @author Antoine R
+     *@author Antoine R, Atonleu A
+     *Classe possedant toutes les fonctions d'administration
+     * du server par l'administrateur
      */
     Logs logs = new Logs();
     String albumTitle = null;
@@ -92,6 +90,7 @@ public class commandController {
         Iterator<AudioElement> it = theHub.elements();
         while (it.hasNext()) System.out.println(it.next().getTitle());
         System.out.println(">> Song created!");
+        System.out.println(">> Press s to save!");
         h();
     }
 
@@ -112,6 +111,8 @@ public class commandController {
         Iterator<Album> ita = theHub.albums();
         while (ita.hasNext()) System.out.println(ita.next().getTitle());
         System.out.println(">> Album created!");
+        System.out.println(">> Press s to save!");
+
         h();
     }
 
@@ -145,6 +146,8 @@ public class commandController {
 
         }
         System.out.println("Song added to the album!");
+        System.out.println(">> Press s to save!");
+
         h();
     }
 
@@ -230,6 +233,8 @@ public class commandController {
             System.out.println (ex.getMessage());
         }
         System.out.println("Playlist deleted!");
+        System.out.println(">> Press s to save!");
+        h();
     }
 
     public void s() {

@@ -11,17 +11,18 @@ import java.io.IOException;
 import java.io.File;
 
 
-
+/**
+ * @author Atonleu A
+ * Cette classe ese charge essentiellement de la manipulation
+ * des fichiers xml
+ *
+ */
 public class XMLHandler {
 	TransformerFactory transformerFactory;
 	Transformer transformer;
 	DocumentBuilderFactory documentFactory;
 	DocumentBuilder documentBuilder;
-	/**
-	 * Création d'un objet log pour
-	 * l'ecriture des erreurs dans
-	 * fichier horodatés
-	 */
+
 	Logs logs = new Logs();
 
 	public XMLHandler() {

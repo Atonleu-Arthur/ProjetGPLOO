@@ -1,11 +1,8 @@
 package server.Controller;
 
-import Model.Album;
-import Model.AudioElement;
-import Model.Exceptions.NoAlbumFoundException;
-import Model.Exceptions.NoElementFoundException;
-import Model.Exceptions.NoPlayListFoundException;
-import Model.Song;
+import server.Model.AudioElement;
+import server.Model.Exceptions.NoAlbumFoundException;
+import server.Model.Exceptions.NoPlayListFoundException;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;

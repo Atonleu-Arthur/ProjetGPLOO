@@ -1,9 +1,9 @@
 package server.Controller;
 
-import Model.*;
-import Model.Exceptions.NoAlbumFoundException;
-import Model.Exceptions.NoElementFoundException;
-import Model.Exceptions.NoPlayListFoundException;
+import server.Model.*;
+import server.Model.Exceptions.NoAlbumFoundException;
+import server.Model.Exceptions.NoElementFoundException;
+import server.Model.Exceptions.NoPlayListFoundException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -33,12 +33,15 @@ class SortByAuthor implements Comparator<AudioElement>
 	}
 }
 
+/**
+ * @author Arthur A, Lucas D
+ * Classe qui gère toutes les manipulation qui récupère les informations concernant les éléments demandés par le client
+ * dans les fichiers xml
+ */
+
 public class MusicHubController {
 
-	/**
-	 * @author Arthur A, Lucas D
-	 * Classe qui gère toutes les manipulation qui récupère les informations concernant les éléments demandés par le client
-	 */
+
 	private List<Album> albums;
 	private List<PlayList> playlists;
 	private List<AudioElement> elements;

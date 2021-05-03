@@ -5,22 +5,73 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="353b93cf-85a5-42f4-93b0-4b7a1f587fa7" name="Default Changelist" comment="Finalisation">
+      <change afterPath="$PROJECT_DIR$/files/Blinding.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/client/SimpleClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_19_39__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_29__Default_Changelist_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_31__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_29_04_2021_20_31__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_09__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_09__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_44__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_01_05_2021_17_44__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_13_51__Default_Changelist_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_21_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_02_05_2021_21_40__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_09_13__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_09_13__Default_Changelist_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_18_40__Default_Changelist_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_05_2021_18_40__Default_Changelist_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/SimpleClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/Controller/SimpleClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/ManageAudio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/elements.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/elements.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/files/playlists.xml" beforeDir="false" afterPath="$PROJECT_DIR$/files/playlists.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Java/ComandeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Java/ComandeTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Java/SimpleServerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Java/SimpleServerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test/Java/SongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test/Java/SongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Album.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Album.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AudioBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/AudioBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/AudioElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/AudioElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoAlbumFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Exceptions/NoAlbumFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoElementFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Exceptions/NoElementFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Exceptions/NoPlayListFoundException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Exceptions/NoPlayListFoundException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Genre.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Genre.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Language.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Language.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/PlayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/PlayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Model/Song.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Model/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/AudioClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/Controller/SimpleClient.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/client/View/MainClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/client/MainClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/AudioUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/AudioUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ClientHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ClientHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/FirstServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/Logs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/MusicHubController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/XMLHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/XMLHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/server/Controller/commandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/Controller/commandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/server/View/MainCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/server/View/MainCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Album.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/AudioBook.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/AudioElement.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Exceptions/NoAlbumFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Exceptions/NoElementFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Exceptions/NoPlayListFoundException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Genre.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Language.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/PlayList.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Song.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Model/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/AudioClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/AudioUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/Controller/SimpleClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/Controller/SimpleClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/client/View/MainClient.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/client/View/ManageAudio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioServer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/AudioUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/AudioUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ClientHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/ClientHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/MusicHubController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByAuthor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/SortByAuthor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByDate.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/SortByDate.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/SortByGenre.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/SortByGenre.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/server/Controller/commandController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ComandeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ComandeTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SimpleServerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SimpleServerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/SongTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/SongTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,6 +136,7 @@
       <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Exceptions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\files" />
       <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub\ServerJMusicHub\src\Controller" />
       <recent name="D:\ECOLES\ESIEA\ANNEE 3\Semestre 2\Genie logiciel\JMusicHub" />
     </key>
@@ -98,25 +150,12 @@
       <recent name="View" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainClient(1)">
+  <component name="RunManager" selected="Application.MainServer (1)">
     <configuration name="ClientConnection" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <module name="JMusicHub" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="View.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainClient (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="client.View.MainClient" />
-      <module name="ProjetGLPOO" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="client.View.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +176,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainClient(1)" type="Application" factoryName="Application" singleton="false" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="client.View.MainClient" />
+    <configuration name="MainClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.MainClient" />
       <module name="ProjetGLPOO" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="client.View.*" />
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainClient(1)" type="Application" factoryName="Application" singleton="false" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="client.MainClient" />
+      <module name="ProjetGLPOO" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -331,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1619985381737</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Finalisation">
+      <created>1620060055874</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1620060055874</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -401,18 +460,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/server/Controller/commandController.java</url>
-          <line>89</line>
+          <line>87</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/server/Controller/commandController.java</url>
-          <line>237</line>
+          <line>242</line>
           <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/client/View/MainClient.java</url>
-          <line>157</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="javax.xml.transform.TransformerException" package="javax.xml.transform" />

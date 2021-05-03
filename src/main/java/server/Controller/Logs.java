@@ -6,6 +6,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
+ * @author Antoine R
  * Classe qui gère l'écriture des évènement dans le journal (logs)
  */
 public class Logs {

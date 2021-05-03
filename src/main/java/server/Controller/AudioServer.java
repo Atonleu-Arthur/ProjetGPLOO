@@ -17,7 +17,9 @@ public class AudioServer {
     public static void init(String song) throws IOException {
 
         /**
-         * @author Arthur A, Lucas D
+         * @author Atonleu A, Lucas D
+         * Cette classe a pour rôle d'envoyer le flux audio vers le client
+         * via les websockets
          * Création d'un objet log pour
          * l'ecriture des erreurs dans
          * fichier horodatés

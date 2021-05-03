@@ -4,7 +4,12 @@ import server.Controller.commandController;
 
 import java.util.Scanner;
 
-
+/**
+ * @author Antoine R
+ * Cette classe est un thread qui est lance en parallèle de léxecution du server
+ * pour permettre à l'administrateur d'éffectuer ses différentes fonctions d'administrations
+ *
+ */
 public class MainCommand implements Runnable {
 
     Thread t;
