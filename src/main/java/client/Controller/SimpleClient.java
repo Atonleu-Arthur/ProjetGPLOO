@@ -17,8 +17,9 @@ public class SimpleClient  {
 
 	/**
 	 *
-	 * Classe qui gère la connexion au serveur simple afin de pouvoir lire les fichiers audio
-	 * @author lucas D, Arthur A
+	 * Classe qui gère la connexion au serveur simple afin de pouvoir recevoir
+	 * les éléments du serveur
+	 * @author lucas D, Atonleu A
 	 */
 	public void connect(String ip,String request)
 	{

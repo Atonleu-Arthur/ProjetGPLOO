@@ -16,7 +16,7 @@ public class MainClient {
      *
      * Classe qui gère tout l'affichage du programme Client
      *
-     * @author lucas
+     * @author lucas , Atonleu A
      */
     public static void main(String[] args) throws IOException {
 

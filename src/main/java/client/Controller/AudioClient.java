@@ -12,7 +12,7 @@ public class AudioClient implements Runnable {
     /**
      *
      * Classe qui gère la connexion au serveur audio afin de pouvoir lire les fichiers audio
-     * @author lucas
+     * @author lucas D
      */
     Socket socket = new Socket("localhost", 4895);
      Thread thread;

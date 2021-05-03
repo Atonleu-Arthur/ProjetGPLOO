@@ -19,7 +19,7 @@ import java.net.Socket;
 public class ServerThread extends Thread {
 
 	/**
-	 * @author Arthur A, Lucas D
+	 * @author Atonleu A, Lucas D
 	 * Cette classe est un Thread qui permet de gérer les différentes réquètes émises par le client
 	 *
 	 */
@@ -41,7 +41,9 @@ public class ServerThread extends Thread {
     public void run() {
         try {
 
-        	//create the streams that will handle the objects coming through the sockets
+			/**
+			 *create the streams that will handle the objects coming through the sockets
+			 */
 			input = new ObjectInputStream(socket.getInputStream());
 			output = new ObjectOutputStream(socket.getOutputStream());
 			MusicHubController musicHubController = new MusicHubController();
@@ -50,16 +52,13 @@ public class ServerThread extends Thread {
 
 			switch (request.charAt(0)) {
 				case 't':
-					//album titles, ordered by date
 					output.writeObject(musicHubController.getAlbumsTitlesSortedByDate());
 
 					break;
 				case 'g':
-					//System.out.println("theHub.getAlbumSongsSortedByGenre(albumTitle)"); // Pareil ici
 					break;
 
 				case 'p':
-					//playlist list
 					output.writeObject(musicHubController.getPlaylistsList());
 					break;
 				case 'o' :
@@ -118,21 +117,15 @@ public class ServerThread extends Thread {
 			}
 
 
-
-
-
-
         } catch (IOException ex) {
-          //  System.out.println("Server exception: " + ex.getMessage());
-            //ex.printStackTrace();
+
 			/**
 			 * logWrite error
 			 */
 			logs.writeError("[SERVER]: "+ex.getMessage());
 
 		} catch (ClassNotFoundException ex) {
-            //System.out.println("Server exception: " + ex.getMessage());
-            //ex.printStackTrace();
+
 			/**
 			 * logWrite error
 			 */
@@ -148,7 +141,6 @@ public class ServerThread extends Thread {
 				output.close();
 				input.close();
 			} catch (IOException ioe) {
-				//ioe.printStackTrace();
 				/**
 				 * logWrite error
 				 */

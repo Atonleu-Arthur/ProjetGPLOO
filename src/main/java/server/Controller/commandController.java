@@ -19,6 +19,7 @@ public class commandController {
      * Création d'un objet log pour
      * l'ecriture des erreurs dans
      * fichier horodatés
+     * @author Antoine R
      */
     Logs logs = new Logs();
     String albumTitle = null;
